@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>blur() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("input").blur(function () {
+				$("span").text($("input").val());
+			})
+			
+			
+		})
+		
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+	
+
+	</style>
+</head>
+<body>
+		<h1>example of blur()event </h1>
+		
+	Enter your name: <input type="text"><br><br>
+	the value is:<span></span>
+
+
+</body>
+</html>

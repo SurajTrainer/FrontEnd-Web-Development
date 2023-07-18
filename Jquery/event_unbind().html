@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>unbind() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$("p").bind("mouseover",function () {
+			$(this).css("background-color","blue");
+		})
+			$("#btn").click(function () {
+				$("p").unbind("mouseover");
+			})
+		});
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		p{
+			cursor: pointer;
+			
+		}
+	
+
+	</style>
+</head>
+<body>
+		<h1>example of unbind()event </h1>
+		<button id="btn">Click</button>
+		<p>click here to get alert notification.</p>
+		
+		
+	
+</body>
+</html>
+

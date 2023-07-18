@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		load ajax exampe  with calback
+	</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("#response").load("dem0.html", function (responseTxT,statusTxt,xhr) {
+					if (statusTxt == "success") {
+						alert("Demo file data loaded successfully");
+					}
+					if (statusTxt == "error") {
+						alert("Error :" + xhr.states + ":" + xhr.statusTxt);
+					}
+				});
+			})
+		})
+
+	</script>
+	<style type="text/css">	
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>this is load example with calback</h1>
+
+	<button id="btn">click</button>
+
+	<div id="response"></div>
+
+</body>
+</html>

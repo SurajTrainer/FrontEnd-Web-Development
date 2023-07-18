@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>first() traversing</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("div").first().css("background-color","orange");
+			})
+		})
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		div{
+			border: 2px solid green;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			background-color: lightgrey;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<h1>example of first()traversing </h1>
+		<button id="btn">Click</button>
+		<div>
+			<label>this is 1st label</label>
+		</div>
+		<div>
+			<label>this is 1st labe2</label>
+		</div>
+		<div>
+			<label>this is 1st labe3</label>
+		</div>
+		<div>
+			<label>this is 1st labe4</label>
+		</div>
+		<div>
+			<label>this is 1st labe5</label>
+		</div>
+
+		
+</body>
+</html>

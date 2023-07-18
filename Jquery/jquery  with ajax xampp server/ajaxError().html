@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		ajaxError ajax exampe
+	</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+
+
+		$(document).ready(function () {
+			
+			$(document).ajaxError(function () {
+				alert("an error occured while excuting on request");
+			});
+
+			$("#btn1").click(function () {
+				$("#response").load("demo.html");
+			});
+
+			$("#btn2").click(function () {
+				$("#response").load("dem.html");
+			});
+		});
+
+	</script>
+	<style type="text/css">	
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>this is ajaxError example</h1>
+
+		<p id="response">this staement for the runing</p>
+
+	<button id="btn1">check response</button>
+	<br><br>
+	<button id="btn2">check error</button>
+
+
+
+</body>
+</html>

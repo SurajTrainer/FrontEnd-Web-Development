@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>get with innerWidth()</title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#id1{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			margin: 20px;
+			border: 2px solid blue;
+
+		}
+
+	</style>
+	<script type="text/javascript">
+			
+			$(document).ready(function () {
+				$("#get").click(function () {
+					var w = $("div").innerWidth();
+					alert("div innerWidth is"+ w );
+				})
+			})
+
+	</script>
+</head>
+<body>
+
+	<h1>To get  using innerWidth()!</h1>
+	<button id="get">click</button>
+
+
+	<div id="id1"></div>
+	
+
+</body>
+</html>

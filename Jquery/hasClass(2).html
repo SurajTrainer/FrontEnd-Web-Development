@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hasClass2() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+
+		body{
+			text-align: center;
+		}
+		.red{
+			background-color: red;
+			margin: 10px;
+			padding: 20px;
+		}
+		.Green{
+			background-color: green;
+			margin: 10px;
+			padding: 20px;
+		}
+	
+	.Blue{
+			background-color: blue;
+			margin: 10px;
+			padding: 20px;
+		}
+	
+
+	
+	</style>
+	<script type="text/javascript">
+		
+	$(document).ready(function () {
+		$("#redbutton").click(function () {
+			var x = $("div").hasClass("red");
+			if (x) {
+				$(".red").fadeTo('slow',0.0).fadeTo('slow',1.0);
+			}
+		})
+		$("#greenbutton").click(function () {
+			var x = $("div").hasClass("Green");
+			if (x) {
+				$(".Green").fadeTo('slow',0.0).fadeTo('slow',1.0);
+			}
+		})
+		$("#bluebutton").click(function () {
+			var x = $("div").hasClass("Blue");
+			if (x) {
+				$(".Blue").fadeTo('slow',0.0).fadeTo('slow',1.0);
+			}
+		})
+	})
+		
+
+	</script>
+	
+	
+</head>
+<body>
+
+<h1>This is the example of the hasClass2()</h1>
+<div class="red">class Red exists</div>
+<div class="Green">class Green exists</div>
+<div class="Blue">class Blue exists</div>
+
+<button id="redbutton">Check  red Class</button>
+<button id="greenbutton">Check  green Class</button>
+<button id="bluebutton">Check  blue Class</button>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>select() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("input").select(function () {
+				$("div").text("this is the ungotable point for me.").show().fadeOut(3000);
+			})
+		
+		})
+		
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+	
+
+	</style>
+</head>
+<body>
+		<h1>example of select()event </h1>
+		
+	Enter your name: <input type="text"><br><br>
+	<div></div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>appendTo() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+
+	</style>
+	<script type="text/javascript">
+	
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("<b> WE are happy to see you here.</b>").appendTo("p");
+			})
+		})		
+	
+	</script>
+</head>
+<body>
+
+	<h1>To  using appendTo() </h1>
+
+	<button id="btn">Click</button>
+	<p>This a appendTo</p>
+	
+
+
+</body>
+</html>

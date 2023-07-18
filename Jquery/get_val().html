@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>get val() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+
+	</style>
+	<script type="text/javascript">
+			
+			$(document).ready(function () {
+				$("#set").click(function () {
+					var str = $("#fruit").val();
+					$("p").html(str);
+				})
+			})
+
+	</script>
+</head>
+<body>
+
+
+
+	<h1>To get dropdown values using val() </h1>
+
+		<select id="fruit">
+		<option>Apple</option>
+		<option>Mango</option>
+		<option>papaya</option>
+		<option>guava</option>
+		
+	</select>
+	<button id="set">click</button>
+	<p></p>
+
+</body>
+</html>

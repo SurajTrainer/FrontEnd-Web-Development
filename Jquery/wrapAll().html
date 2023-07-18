@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wrapAll() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		div{
+			background-color: skyblue;
+		}
+
+	</style>
+	<script type="text/javascript">
+	
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("p").wrapAll("<div></div>");
+			})
+		})
+
+	</script>
+</head>
+<body>
+
+<h1>Example of the wrapAll ()</h1>
+<button id="btn">Click</button>
+
+<p>This is my statement.</p>
+<h3>This is header</h3>
+<p>This is my statement.</p>
+<p>This is my statement.</p>
+
+
+</body>
+</html>

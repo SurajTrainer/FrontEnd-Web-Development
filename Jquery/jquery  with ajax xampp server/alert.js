@@ -1,0 +1,1 @@
+alert("this is javascript releted program \n so it s called with js file");

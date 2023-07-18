@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>submit() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("form").submit(function (event) {
+				if ($("input").val() == 'learnvern') {
+					$('span').text("secreat message is correct").show().fadeOut(3000);
+					return;
+				}else{
+					$("span").text("secreat message is incorrect").show().fadeOut(3000);
+				}
+				event.preventDefault();
+			})
+		
+		})
+		
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+	
+
+	</style>
+</head>
+<body>
+		<h1>example of submit()event </h1>
+	<form action="javascript:alert('form submit successfully')">
+		Enter a secreat message <input type="text" >
+		<br><br>
+		<input type="submit" value="Click">
+	</form>	
+	<span></span>
+</body>
+</html>

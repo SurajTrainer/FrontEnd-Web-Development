@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>detach() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+
+	</style>
+	<script type="text/javascript">
+	
+	$(document).ready(function () {
+		$("#parent").click(function () {
+			$("body").css("background",'cyan');
+		});
+		$("#btn").click(function () {
+			$("#parent").detach();
+		})
+	})
+	
+	</script>
+</head>
+<body>
+
+<h1>Example of the detach elments using detach()</h1>
+<button id="btn">Click</button>
+
+<div id="parent">
+	<p>This will get remove</p>
+<p>This will get remove</p>
+<p>This will get remove</p>
+<p>This will get remove</p>
+</div>
+
+
+
+</body>
+</html>

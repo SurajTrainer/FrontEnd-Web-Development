@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment jquery ajax</title>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+
+			$(document).ajaxError(function () {
+				alert("the given par. ihave occuring some errors");
+			})
+			$("#btn1").click(function () {
+				$("#pp").load("test.html");
+			})
+			$("#btn2").click(function () {
+				$("#pp").load("tet.html");
+			})
+		})
+
+	</script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>example of the ajax assignment </h1>
+	<button id="btn1">Ok...</button>
+	<br> <br>
+	<button id="btn2">Error</button>
+	<p id="pp">this is p satement</p>
+</body>
+</html>

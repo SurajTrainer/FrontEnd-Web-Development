@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>prevUntil() traversing</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("ul").prevUntil("h2").css("border",'5px solid red');
+			})
+		})
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		.design *{
+			border: 2px solid green;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<h1>example of prevUntil()traversing </h1>
+		<button id="btn">Click</button>
+		<br>
+		<div class="design">
+			<div id="div1">
+				This is div
+			<ul id="ul1">
+				this is ul
+				</ul>
+				<h2>
+					this is h2
+					</h2>
+					<p>
+						this is a statement
+					</p>
+
+			<ul>
+				this is ul2
+				</ul>
+				<h3>
+					this h3
+				</h3>
+				<h1>
+					this is h1
+				</h1>
+				<h4>
+					this is h4
+				</h4>
+			
+			</div>
+
+		</div>
+		
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>position() </title>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+
+		body{
+			text-align: center;
+		}
+		#parentDiv{
+			position: relative;
+			widows: 200px;
+			height: 200px;
+			background-color: darkcyan;
+
+		}
+		p{
+			position: absolute;
+			top: 100px;
+			left: 50px;
+			background-color: hotpink;
+			color: white;
+		}
+		
+	
+	</style>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				var position = $("p").position();
+				alert("top :" + position.top + "left " + position.left);
+			})
+		})
+		
+
+
+	</script>
+	
+	
+</head>
+<body>
+
+<h1>This is the example of the position() to get property</h1>
+<button id="btn">Click</button>
+<div id="parentDiv">
+	<p> this is the back one.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>parents() traversing</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("p").parents().css("background-color","orange");
+			})
+		})
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		.design *{
+			border: 2px solid green;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			background-color: lightgrey;
+			color: green;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<h1>example of parents()traversing </h1>
+		<button id="btn">Click</button>
+	<div class="design">
+		<div>
+	
+			<ul>
+				this is ul
+				<h1>
+					this is h1
+					<p>
+						this is p statement
+					</p>
+				</h1>
+			</ul>
+		</div>
+		
+	</div>
+		
+		
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animate( exampe 1)</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#rect{
+			width: 100px;
+			height: 100px;
+			background-color: skyblue;
+			position: absolute;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			$("#animate").click(function () {
+				$("#rect").animate({left :'500px'},3000);
+			})
+		})
+
+
+	</script>
+</head>
+<body>
+
+	<h1>animate</h1>
+	<button id="animate">Start</button>
+	<div id="rect"></div>
+
+	
+</body>
+</html>

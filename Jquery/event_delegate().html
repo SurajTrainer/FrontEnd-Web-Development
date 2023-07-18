@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>delegate() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$("body").delegate("p","click",function(){
+				$(this).after("<p>Welcome mst yur::");
+			})
+		})
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		p{
+			cursor: pointer;
+			background-color: skyblue;
+		}
+	
+
+	</style>
+</head>
+<body>
+		<h1>example of delegate()event </h1>
+		<p>i am surya singh.</p>
+		
+	
+</body>
+</html>
+

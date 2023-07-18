@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment dimentdio</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				var wh = $("div").width();
+				alert("the width. is :" + wh);
+
+				var wh = $("div").height();
+				alert("the height. is :" + wh);
+
+				var wh = $("div").innerWidth();
+				alert("the innerWidth. is :" + wh);
+
+				var wh = $("div").innerHeight();
+				alert("the innerHeight. is :" + wh);
+
+				var wh = $("div").outerWidth();
+				alert("the outerWidth. is :" + wh);
+				var wh = $("div").outerHeight();
+				alert("the outerHeight. is :" + wh);
+			})
+		})
+
+
+	</script>
+	<style type="text/css">	
+
+body{
+	text-align: center;
+}
+div{
+	width: 500px;
+	height: 300px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid blue;
+	background-color: lightblue;
+}
+
+	</style>
+</head>
+<body>
+
+	<h1>example of the assignment of the Dimention</h1>
+	<button id="btn">Click</button>
+	<div></div>
+
+
+</body>
+</html>
+
+<!-- this assignmnet have done.. -->

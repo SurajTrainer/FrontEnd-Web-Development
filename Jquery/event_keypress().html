@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>keypress() event</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var i = 0;
+			$("input").keypress(function () {
+				$("span").text(10 - $("input").val().length);
+			})
+			
+			
+		})
+		
+
+	</script>
+	<style type="text/css">
+		
+		body{
+			text-align: center;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<h1>example of keypress()event </h1>
+		
+	Enter your name: <input type="text" maxlength="10">
+	<span>0</span>
+
+</body>
+</html>

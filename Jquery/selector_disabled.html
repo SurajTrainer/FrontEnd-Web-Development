@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery :disabled selector </title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+
+		$(document).ready(function () {
+			$("#btn").click(function (e) {
+				$(":disabled").css("background-color","orange");
+				e.preventDefault();
+			})
+			
+		})
+
+	</script>
+	<style type="text/css">	
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>example of the jquery :disabled selector</h1>
+
+	<form>
+		<input type="text" disabled placeholder="first name"><br> <br>
+		<input type="text"  placeholder="last name"><br> <br>
+		<input type="number" disabled placeholder=" number"><br> <br>
+		<input type="text"  placeholder="Age "><br> <br>
+		<input type="address" disabled placeholder=" address"><br> <br>
+
+		<button id="btn">Click..</button>
+	</form>
+
+</body>
+</html>
