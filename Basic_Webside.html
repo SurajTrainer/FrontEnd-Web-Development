@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #000000d3;
+  color: #390ae4;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size-adjust: inherit;
+}
+
+.logo {
+  font-size: 44px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00A8E8;
+}
+
+/* Landing page styles */
+.landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #333, #222);
+  color: #fff;
+  text-align: center;
+}
+
+.headline {
+  font-size: 48px;
+}
+
+.subheadline {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Other sections styles */
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">Suraj Singh</h1>
+      <button class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Web Dev Rules</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Landing page -->
+  <header class="landing">
+    <div class="container">
+      <h1 class="headline">Welcome to My small Prjoct</h1>
+      <p class="subheadline">Enjoy the experience</p>
+    </div>
+  </header>
+
+  <!-- Main content sections -->
+  <section id="about">
+    <div class="container">
+      <h2>Web Dev Rules</h2>
+      <p>
+        Start with HTML, CSS, and JavaScript: These three fundamental technologies are the building blocks of web development. Learn HTML for structuring content, CSS for styling, and JavaScript for interactivity.
+
+Practice Regularly: Web development is a skill that improves with practice. Code regularly, even if it's just small projects or exercises.
+
+Learn by Doing: Hands-on projects are the best way to learn. Build websites, web applications, and try recreating popular websites to understand how they work.
+
+Use Online Resources: There are countless tutorials, articles, and courses available online. Leverage resources like freeCodeCamp, MDN Web Docs, Codecademy, and YouTube tutorials.
+
+Stay Curious and Keep Exploring: Web development is a vast field, and technologies evolve rapidly. Stay curious, explore new tools and frameworks, and keep up with industry trends.
+
+Master Responsive Web Design: Learn how to create websites that adapt and look great on various devices, including desktops, tablets, and smartphones.
+
+Version Control with Git: Get familiar with Git for version control. It allows you to track changes, collaborate with others, and revert to previous versions if needed.
+
+Understand Web Accessibility: Learn about web accessibility best practices to ensure that your websites are usable by all, including people with disabilities.
+
+Learn from Others: Join web development communities, participate in forums, and follow experienced developers on social media. Engaging with the community helps you learn and stay motivated.
+
+Patience is Key: Web development can be challenging, but don't get discouraged. Be patient with yourself, and remember that continuous learning and improvement are part of the journey.
+
+Document Your Learning: Take notes, create cheat sheets, or maintain a learning journal. Documenting what you learn can reinforce your knowledge.
+
+Build a Portfolio: As you gain experience, showcase your work in a portfolio. Employers and clients like to see real-world examples of your skills.
+
+Experiment and Break Things: Don't be afraid to experiment and make mistakes. Break things and learn from them; that's how you grow as a developer
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>Web development is the process of creating and maintaining websites and web applications using various technologies, including HTML, CSS, and JavaScript.
+
+        Front-end web development focuses on building the user interface and user experience using HTML, CSS, and JavaScript to make websites visually appealing and interactive.
+        
+        Back-end web development involves server-side programming, handling databases, and managing application logic to enable data processing and interaction with the front-end.
+        
+        Full-stack web developers are proficient in both front-end and back-end technologies, allowing them to work on all aspects of web development.
+        
+        Web development frameworks and libraries, such as React, Angular, and Node.js, streamline the development process and provide reusable components.
+        
+        Responsive web design ensures that websites adapt and look great on different devices, including desktops, tablets, and mobile phones.
+        
+        Web developers use version control systems like Git to manage code changes and collaborate with others effectively.
+        
+        Security considerations are crucial in web development to protect against common threats like Cross-Site Scripting (XSS) and SQL injection.
+        
+        Continuous Integration/Continuous Deployment (CI/CD) automates the testing and deployment process, making it faster and more reliable.
+        
+        Web development trends continuously evolve, and staying up-to-date with new technologies and best practices is essential for success.
+        
+        Remember, web development is a vast and dynamic field, and these lines provide a brief overview. There's always more to learn and explore as technology and best practices evolve</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+  </section>
+
+  <script src="script.js">
+    // JavaScript code for the navigation menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+  </script>
+</body>
+</html>
