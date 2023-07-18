@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		
+	</title>
+	<script type="text/javascript">
+		function myfunction() {
+		alert();
+		}
+		// function mousedownfunction() {
+		// 	document.body.style.background = "pink"
+		// }
+			function mousedownfunction() {
+			document.body.style.background = "pink"
+		}
+				function mouseoverfunction() {
+			document.body.style.background = "orange"
+		}
+		
+
+	</script>
+</head>
+<body>
+	<form>
+	<!-- this is about  keyboard events  starting -->
+	<script type="text/javascript">
+		function keydown() {
+			document.body.style.background ="cyan";
+		}
+		function keypress() {
+			document.body.style.background ="skyblue";
+		}
+	</script>
+</form>
+<label>first name</label>
+<input type="text" name="first name" onkeydown="keydown()"><br><br>
+<label>last name</label>
+<input type="text" name="last name" onkeydown="keypress()">
+<!-- here is finishing keyboard event attributes -->
+
+<form>
+
+	<!-- main work here on label  -->
+<!-- onclick
+	ondblclick
+	onmousedown
+	onmousemove
+	onmouseout
+	onmouseover
+	onmouseup -->
+
+	<!-- <label onmousedown="myfunction">username</label>      <input type="text" name="username"><br><br> -->
+	<!-- <label onmouseover="mousedownfunction()">username</label>      <input type="text" name="username"><br><br> -->
+	<label onmouseout="mousedownfunction()">username</label>      <input type="text" name="username"><br><br>
+
+	<button onclick="myfunction()"> Me..</button>
+	<button onmouseup="mouseoverfunction()"> hii!! </button>
+
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Api storage</title>
+	<script type="text/javascript">
+
+		function clickCounter() {
+			if (typeof(Storage) !== "undefined") {
+				if (sessionStorage.clckcount) {
+					sessionStorage.clckcount = Number(sessionstorage.clckcount)+1;
+
+				}else{
+					sessionstoragec.clckcount = 1;
+				}document.getElementById("result").innerHTML = "you have clicked the button"
+				+ sessionstorage.clckcount + " times."
+			}	else{
+			document.getElementById("result").innerHTML = "you have clicked the button"
+			
+		}
+				}
+				
+	</script>
+</head>
+<body>
+<button onclick="clickcouner()">Click me...</button>
+<p id="result"></p>
+<p>click the button to start the counter....</p>
+</body>
+</html>
+
+
+<!-- its have also a issue  not showing about click time -->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>api-drag and drop</title>
+<style >
+	#div1{
+		width: 250px;
+		height: 5px;
+		padding: 50px;
+		border: 3px solid;
+	}
+</style>
+<script type="text/javascript">
+
+	function drag(e){
+	e.dataTransfer.SetData("text",e.target.id);
+}
+	function allowDrop(e) {
+		e.preventDefault();
+	}
+
+function drop(e){
+	e.preventDefault();
+}
+
+</script>
+</head>
+<body>
+	<img id= "drag1" src="shine.jpg" draggable="true" ondragstart="drag(event)" width="350px" height="40px">
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" border="2px"></div>
+</body>
+</html>
+
+<!-- in this form ,, we will try with event  in short form e -->

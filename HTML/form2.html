@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form2</title>
+<script>
+	function mouseoverfunction() {
+		document.body.style.background = "cyan";
+	}
+	// function mouseupfunction() {
+	// 	document.body.style.background = "skyblue";
+	// }
+</script>
+</head>
+<body >
+<!-- <form  action="form_submit.html" method="get" target="_blank" novalidate> -->
+	
+
+	<fieldset>
+	<label>Name</label>
+	<input type="text" name="name"><br><br>
+	<label>Last Name</label>
+	<input type="text" name="name"><br><br>
+	<label>email:</label>
+<input type="email" name="email" required  oninvalid="email"><br><br>
+<label>contact number</label>
+<input type="number" name="contact number" placeholder="123 345 4567" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"><br><br>
+
+
+<input type="submit" value="submit">
+
+
+</fieldset>
+</form>
+
+<!-- <button onmouseover="mouseoverfunction()">Change Background</button>
+
+<button onmouseup="mouseupfunction()">Change it...</button> -->
+<button onmouseup="mouseoverfunction()">Change Background Color</button>
+</body>
+</html>

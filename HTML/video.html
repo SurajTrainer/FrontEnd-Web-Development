@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> videolife tags </title>
+</head>
+<body>
+	<!-- in audio tag controls are very important -->
+<h1>this is a audio file</h1>
+<audio controls>
+ <source src="sidhu.mp3" type="audio/MP3"></audio>
+
+
+ 	
+<!-- <video controls  height="300" width="300" poster="shine.jpg" autoplay loop muted preload="none"> -->
+	<!-- <source src="Project 1.mp4" type="mp4"> -->
+<!-- </video> -->
+
+
+<!-- this video not workng -->
+<video controls width="300" height="250" loop muted preload="none">
+	<source src="slowvideo.mp4" type="video/mp4">
+<!-- now working properly -->
+</video>
+
+<h1>SVG ..Circle      </h1> 
+<h2> Full Form (scalable vactor graphic)</h2>
+<svg width="200" height="200">
+	<circle cx="100" cy="100" r="90" stroke="red" stroke-widt="10" fill="pink">
+	</circle>
+	</svg>
+
+	<h1>ellipse</h1>
+	<svg width="500" height="200">
+		<ellipse cx="200" cy="120" rx="200" ry="80" style="fill:yellow; stroke:purple; stroke-width:2">
+
+		</ellipse><br>
+<h1>rectangle</h1>
+
+		<svg width="300" height="150">
+			<rect width="200" height="150" stroke="red" stroke-width="7" fill="cyan">
+			</rect>
+<h1>svg line</h1>
+
+			<svg height="210" width="500">
+				<line x1="0" y1="0" x2="200" y2="150" style="stroke: blue;
+				stroke-width:10">
+
+			</svg>
+<h1>polygon</h1>
+			<svg height="210" width="500">
+				<polygon points="200,10 250,190 160,210" style="stroke:red; stroke-width:9; fill:green">
+			</svg>
+<h1>polyline</h1>
+			<svg height="210" width="500">
+				<polyline points="20,20 40,25 40,60 80,120 200,150" style="stroke:red; stroke-width:6; fill:skyblue;">
+			</svg><br><br><br>
+			<h1>.....svg path</h1>
+
+			<svg>
+			<!-- <path d="M150 0 L750 200 L225 200 Z"> -->
+				<path d="M200 0 S300 210 125 20" style="stroke: red; fill: CYAN;">
+					</svg>
+<hr>
+					<h1>text</h1>
+					<svg>
+						<text x="10" y="20" fill="red" transform="rotate(30 40 20)"> i love dogs</text>
+					</svg><hr>
+			<svg height="200" width="500">
+				<g fill="none" stroke="green" stroke-width="6">
+				<!-- 	<path stroke="red" d="M5 20 L215 0"/>
+						<path stroke="black" d="M5 40 L215 0"/>
+							<path stroke="green" d="M5 60 L415 0"/> -->
+								<!-- <path stroke-width="8" d="M5 20 L215 0"/>
+						<path stroke-width="8" d="M5 40 L215 0"/>
+							<path stroke-width="8" d="M5 60 L415 0"/> -->
+							<!-- <path stroke-linecap="butt" d="M5 20 L240 20"/>
+						<path stroke-linecap="round" d="M5 40 L240 40"/>
+						<path stroke-linecap="square" d="M5 60 L240 60"/> -->
+					<path stroke-dasharray="5,5" d="M5 20 L240 20"/>
+						<path stroke-dasharray="10,20" d="M5 40 L240 40"/>
+						<path stroke-dasharray="5,4 2,6 3,5 6,7" d="M5 60 L240 60"/>			
+								</g>
+			</svg><hr>
+			<br><br>
+	<h1>SVG GRADIENT-linear</h1>
+	<svg height="120" width="400">
+		<defs>
+			<linearGradient id="grad1" x1="0%" y1="0%"x2="100%" y2="0%">
+				<stop offset="0%" style="stop-color: yellow;" />
+					<stop offset="100%" style="stop-color: red;" />
+				</linearGradient>
+		</defs>
+		<ellipse cx="200" cy="70" rx="84" ry="55" fill="url(#grad1)" />
+	</svg>
+			<svg height="120" width="400">
+		<defs>
+			<linearGradient id="grad2" x1="0%" y1="0%"x2="100%" y2="0%">
+				<stop offset="0%" style="stop-color: yellow;" />
+					<stop offset="100%" style="stop-color: red;" />
+				</linearGradient>
+		</defs>
+		<ellipse cx="200" cy="70" rx="84" ry="55" fill="url(#grad2)" />
+		<text fill="blue" font-size="20" x="140" y="80">
+			surya
+		</text>
+	</svg>
+	<hr>
+	<h1>Gradient-radial</h1>
+	<svg height="120" width="400">
+		<defs>
+			<radialGradient id="grad3" cx="50%" cy="50%" r="50%" fx="50%" fy="50">
+				<stop offset="0%" style="stop-color: yellow;stop-opacit:0;"/>
+					<stop offset="100%" style="stop-color: red; stop-opacity: 1;" />
+				</radialGradient>
+		</defs>
+		<ellipse cx="150" cy="70" rx="84" ry="55" fill="url(#grad3)" />
+		</svg>
+			
+</body>
+</html>
+ 
