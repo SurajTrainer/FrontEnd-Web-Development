@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bootstrap accordion  example</title>
+	<style type="text/css">
+		.container h1{
+			text-align: center;
+			color: orangered;
+		}
+		h3{
+			color: indianred;
+		}
+	</style>
+
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+<!-- 	<script type="text/javascript">
+		$(function () {
+			$('[data-toggle="popover"]').popover();
+		})
+	</script>
+ -->
+</head>
+<body>
+
+			<div class="container">
+				<h1>Welcome in Bootstrap with accordion </h1>	
+				<br><br>
+				<div class="accordion" id="exampleAccordion">
+					<div class="card">
+						<div class="card-header">
+							<h2 class="mb-0">
+								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#partOne"  aria-cntrols="ExampleAccordion" aria-expanded="true">
+									One
+								</button>
+							</h2>
+						</div>
+						<div class="collapse show" id="partOne" aria-label="headingOne" data-parent="#exampleAccordion">
+							<div class="card-body">
+							this is part one
+						</div>
+						</div>
+					</div>
+
+
+
+					<div class="card">
+						<div class="card-header">
+							<h2 class="mb-0">
+								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#parttwo"  aria-cntrols="ExampleAccordion" aria-expanded="false">
+									Two
+								</button>
+							</h2>
+						</div>
+						<div class="collapse" id="parttwo" aria-label="headingOne" data-parent="#exampleAccordion">
+							<div class="card-body">
+							this is part two
+						</div>
+						</div>
+					</div>
+
+
+
+
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<h2 class="mb-0">
+								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#partthree"  aria-cntrols="ExampleAccordion" aria-expanded="false">
+									Three
+								</button>
+							</h2>
+						</div>
+						<div class="collapse" id="partthree" aria-label="headingOne" data-parent="#exampleAccordion">
+							<div class="card-body">
+							this is part Three
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+		
+			</div>
+		
+
+
+
+		
+</body>		
+</html>

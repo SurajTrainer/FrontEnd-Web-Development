@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bootstrap Dropdown example</title>
+	<style type="text/css">
+		h1,h3{
+			text-align: center;
+			color: orangered;
+		}
+		div{
+			text-align: center;
+		}
+		
+	
+	</style>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+
+			<div class="container">
+				<h1>Welcome in Bootstrap with Dropdown</h1>
+			</div><br><br>
+
+			<h3>1.Default dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+				<!-- <ul class="dropdown-menu">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+				</ul> -->
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+
+			<h3>2.divider dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+
+			<h3>3.header dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+				
+				<div class="dropdown-menu">
+					<h4 class="dropdown-header">Non Scripting Language</h4>
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<div class="dropdown-divider"></div>
+					<h4 class="dropdown-header"> Scripting Language</h4>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+
+			<h3>4.disabled dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item disabled" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+			<h3>5.active dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item active" href="#">HTML</a>
+					<a class="dropdown-item " href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+			<h3>6. dropup</h3>
+			<div class="dropup">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropup</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item " href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div><br>
+			<h3>7.split button dropdown</h3>
+			<div class="row">
+				<div class="col-2">
+					
+			<div class="btn-group">
+				<button class="btn btn-primary" type="button">Primary</button>
+				<button class="btn btn-primary dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				aria-hapopup="true" aria-expendable="false">
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+				<div class="col-2">
+			<div class="btn-group">
+				<button class="btn btn-secondary" type="button">secondary</button>
+				<button class="btn btn-secondary dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				aria-hapopup="true" aria-expendable="false">
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+				<div class="col-2">
+			<div class="btn-group">
+				<button class="btn btn-success" type="button">success</button>
+				<button class="btn btn-success dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				aria-hapopup="true" aria-expendable="false">
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+				<div class="col-2">
+			<div class="btn-group">
+				<button class="btn btn-info" type="button">info</button>
+				<button class="btn btn-info dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				aria-hapopup="true" aria-expendable="false">
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+				<div class="col-2">
+			<div class="btn-group">
+				<button class="btn btn-warning" type="button">warning</button>
+				<button class="btn btn-warning dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				aria-hapopup="true" aria-expendable="false">
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+				<div class="col-2">
+			<div class="btn-group">
+				<button class="btn btn-danger" type="button">danger</button>
+				<button class="btn btn-danger dropdown-toggle dropup-toggle-split"  data-toggle="dropdown"
+				>
+					<span class="sr-only">Button Toggle</span>
+				</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">JavaScript</a>
+				</div>
+			</div>
+				</div>
+			</div>
+			
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

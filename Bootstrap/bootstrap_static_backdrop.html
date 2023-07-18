@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bootstrap static,scrollling,vertical centered Modal  example</title>
+	<style type="text/css">
+		.different {
+			text-align: center;
+			color: orangered;
+		}
+		h3{
+			color: red;
+		}
+		
+	</style>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+			<div class="container">
+				<h1 class="different">Welcome in Bootstrap static,scrollling,vertical centered  with Modal </h1>
+				<h3>!. static backdrop Modal</h3>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalpopup1">
+					open  Modal
+				</button>
+				<br><br>
+
+				<h3>2. Scrolling long Content</h3>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalpopup2">
+					open Scrolling Modal
+				</button>
+				<br><br>
+
+				<h3>3. Vertical  center Modal</h3>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalpopup3">
+					open Vertical Centered Modal
+				</button>
+
+				<br><br>
+
+				<h3>4. tooltip   Modal</h3>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalpopup4">
+					open Tooltip Modal
+				</button>
+
+				<br><br>
+
+				<h3>5. Grid   Modal</h3>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalpopup5">
+					open Tooltip Modal
+				</button>
+			</div>
+
+			<div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" id="modalpopup1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">
+								Welcome Sir..
+							</h3>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+							
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>This is thwe example of the Modal Plugin's </p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" id="modalpopup2">
+				<div class="modal-dialog modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">
+								Welcome Sir..
+							</h3>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+							
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>This is thwe example of the Modal Plugin's .
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor ipsum, ultrices id elementum a, consectetur ut dui. Pellentesque purus mauris, sollicitudin a diam sollicitudin, vulputate fermentum turpis. Donec fermentum elit vitae erat facilisis pharetra. Phasellus quis justo mollis, efficitur orci sagittis, molestie leo. Sed lectus nisl, finibus in turpis sit amet, lacinia porttitor nisi. Donec vitae dui facilisis, pretium sem nec, aliquam orci. Sed porta commodo lacus in eleifend. In sed mi ut urna rutrum vulputate eget malesuada purus. Sed cursus est vitae pretium tincidunt. Nullam vel sodales dolor.
+
+Sed eu nisi urna. Sed ut orci porttitor, dapibus velit in, vulputate mauris. Proin aliquam urna in risus vehicula rutrum. Suspendisse sodales et purus non porttitor. Suspendisse ornare eros eget tristique molestie. Pellentesque sodales ultrices egestas. Vivamus volutpat tincidunt nibh, et accumsan lectus porttitor et. Curabitur nec sem vitae arcu hendrerit tempus nec sed orci. Ut vel leo ac sapien gravida viverra rhoncus et ligula.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+				<div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" id="modalpopup3">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">
+								Welcome Sir..
+							</h3>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+							
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>This is thwe example of the Modal Plugin's .
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor ipsum, .</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+				<div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" id="modalpopup4">
+				<div class="modal-dialog ">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">
+								Welcome Sir..
+							</h3>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+							
+							</button>
+						</div>
+						<div class="modal-body">
+							<h5>this is Tooltip</h5>
+							<p>
+								<a href="#" class="tooltip-test" data-toggle="tooltip" title="This is a link whch will redirect you on other side..">Hlo , my prety man...</a>
+							</p>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+				<div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" id="modalpopup5">
+				<div class="modal-dialog ">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">
+								Welcome Sir..
+							</h3>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+							
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-2 bg-danger">
+										2
+									</div>
+									<div class="col-md-4 ms-auto bg-warning">
+										4
+									</div>
+									<div class="col-md-6 ms-auto bg-primary">
+										6
+									</div>
+									<div class="row">
+										<div class="col-md-3 ms-auto bg-info">
+										3
+									</div>
+									<div class="col-md-4 ms-auto ms-auto bg-success">
+										4
+									</div>
+									<div class="col-md-5 ms-auto ms-auto bg-secondary">
+										5
+									</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+		
+
+
+
+
+		
+</body>		
+</html>
