@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>function </title>
+
+<script type="text/javascript">
+	
+	// function without perameter
+	function showme() {
+		// body...
+		alert("Alert button is clicked");
+	}
+
+	// function with perameter
+
+	function calculate(num) {
+		// body...
+
+		alert(num*num);
+	}
+
+	// now example of return function
+	function info() {
+		// body...
+		return ("Helo i welcome you..");
+
+	}
+	document.write(info());
+		document.write("<br>");
+	
+	function calc(num) {
+		// body...
+		return num+5 ;
+
+	}
+	document.write(calc(40));
+		document.write("<br>");
+
+
+</script>
+
+</head>
+<body>
+
+	<!--  this example is without perameter -->
+
+	<input type="button" onclick="showme()" value="Alert!" >
+
+	<!-- this example is with perameter -->
+	<input type="button" onclick="calculate(5)" value="the square is 5" >
+
+</body>
+</html>

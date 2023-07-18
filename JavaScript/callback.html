@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>callback</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function getData(x,y,callback) {
+			document.writeln("Multipcation of " + x + " and " + y  + "is: " + (x*y)+ "<br>");
+
+			callback();
+		}
+
+		function showData() {
+			document.writeln("this is the statement written through callback function.");
+		}
+
+		getData(10,20,showData);
+
+
+
+
+	</script>
+
+</body>
+</html>

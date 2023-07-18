@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>promise async</title>
+</head>
+<body>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		
+		function display(value) {
+			document.getElementById('result').innerHTML = value;
+		}
+
+		async function myFuncton() {
+			return "You are a humble man yrr";
+		}
+		/*
+		let promise = new Promise(resolve,reject){
+		
+		resolve(){"ok"};
+		reject(){"Error"}
+		}
+		promise.then(
+		function(value){display(value)},
+		function(error){display(error)}
+		)
+		*/
+		myFunction().then(
+			function(value){display(value)},
+		function(error){display(error)};
+
+
+
+
+	</script>
+
+</body>
+</html>

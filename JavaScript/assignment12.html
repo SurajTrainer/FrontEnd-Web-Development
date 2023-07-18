@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment 12</title>
+</head>
+<body>
+	divide a number using 0
+<input type="text" id="id1">
+
+<button type="button"  onclick="on2()">Magic </button>
+<p id="message"></p>
+	<script type="text/javascript">
+
+		function on2() {
+			try{
+				var x = document.getElementById('id1').value;
+				if (x == 0) throw "Division using 0 s not possible";
+					throw  new Error ("this si  error.");
+			}catch(e){
+				document.getElementById('message').innerHTML  = "input  " + e;
+			}
+		}
+
+	</script>
+
+</body>
+</html>
+
+<!-- this assignment also  get complete -->

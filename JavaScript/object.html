@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>object</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var add = new Function ("num1", "num2", "return num1 + num2" );																															
+document.writeln(add(12,34));
+document.writeln(add(45,24));
+document.writeln("<br>");
+
+
+var power = new Function ("num1", "num2", "return Math.pow(num1 , num2)" );																															
+document.writeln(power(2,3));
+
+document.writeln("<br>");
+
+document.writeln("<h3>the example is call function</h3>");
+
+// example of call() function object
+function Emp(id, name) {
+	this.id = id;
+	this.name = name;
+}
+function PermanentEmp(id,name) {
+	Emp.call(this,id,name);
+}
+document.writeln(new PermanentEmp(12,"singh rajput").id);
+document.writeln(new PermanentEmp(12,"singh rajput").name);
+
+document.writeln("<h3>the 2nd example is call function</h3>");
+
+function Emp(id, name) {
+	this.id = id;
+	this.name = name;
+}
+function PermanentEmp(id,name) {
+	Emp.call(this,id,name);
+}
+function TemporaryEmp(id,name) {
+	Emp.call(this,id,name);
+}
+var pEmp = new PermanentEmp(23, "  pratik sungh ");
+var tEmp = new TemporaryEmp(34, "  satyam sungh ");
+
+document.writeln(pEmp.id + "" + pEmp.name);
+document.writeln("<br>");
+
+document.writeln(tEmp.id + "" + tEmp.name);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>promise any  API</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		Promise.any([
+
+			// any in the promise show first which will first 
+			// it show error only with catch or when here will be only error & can defined with console
+
+			new Promise( (resolve,reject) => setTimeout(reject(new Error("its a friendly error")),)),
+			new Promise( (resolve,reject) => setTimeout(resolve(1) ,2000)),
+			new Promise( (resolve,reject) => setTimeout(resolve(2) ,3000)),
+
+
+			]).then(alert);
+
+	</script>
+
+</body>
+</html>

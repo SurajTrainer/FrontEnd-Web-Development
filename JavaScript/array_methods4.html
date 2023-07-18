@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array method4</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// of() array methods
+		document.writeln("<h3> exmaple  of . of() array method" + "<br>");
+		document.writeln(Array.of(1,4,7,8,9));
+		document.writeln("<br>");
+
+		// console.log(Array.of(1,4,7,8,9));
+
+
+
+		//  push()array methods
+		document.writeln("<h3> exmaple  of .  push() array method" + "<br>");
+
+		var arr1 = [2,4,6];
+
+		arr1.push(8);
+		document.writeln(arr1);
+		arr1.push(9);
+		document.writeln("<br>"+arr1);
+		document.writeln("<br>");
+
+
+	
+		//  pop() array methods
+		document.writeln("<h3> exmaple  of .  pop() array method" + "<br>");
+
+			arr1.pop();
+		document.writeln(arr1);
+		arr1.pop();
+		document.writeln("<br>"+arr1);
+
+
+
+		// reverse() array methods
+		document.writeln("<h3> exmaple  of .  reverse() array method" + "<br>");
+
+			document.writeln(arr1.reverse());
+
+
+
+
+
+		// reduce() array methods
+		document.writeln("<h3> exmaple  of .  reduce() array method" + "<br>");
+
+		var arr2 = [3,5,6,4];
+
+		var a = arr2.reduce(
+			function (accumulator,currentValue){
+				return accumulator + currentValue;
+			})
+			document.writeln(a);
+
+
+
+			// some() array methods
+		document.writeln("<h3> exmaple  of .  some() array method" + "<br>");
+
+		var arr3 = [34,50,6,12];
+
+		function test(x) {
+			return x > 34;
+		}
+		var result = arr3.some(test);
+		document.writeln(result);
+
+
+
+
+			// shift methods
+		document.writeln("<h3> exmaple  of .  shift()  method" + "<br>");
+
+		document.writeln(arr3.shift() + "<br>");
+
+
+
+
+
+			// slice() methods
+		document.writeln("<h3> exmaple  of .  slice()  method" + "<br>");
+
+		var arr4 = [4,5,3,5,6,7,5,7,5,7,6];
+
+		var sliceArray = arr4.slice(4,7);
+
+		document.writeln(sliceArray);
+
+
+	</script>
+
+</body>
+</html>

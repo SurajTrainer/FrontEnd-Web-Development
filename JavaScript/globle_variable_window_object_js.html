@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>global veriable using window object..</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var temp = "this is  temp vaiable";
+
+	function abc() {
+		// body...
+		var y = "this is a 'y' tag variable"
+		window.x = "this is the shortcut";
+		document.write(window.x);
+		alert(temp);
+	}
+	abc();
+	def();
+
+	document.write("<br>");
+		document.write(window.y);
+
+
+	document.write("<br>");
+		document.write(window.x);
+
+		function def(){
+		document.write("<br>");
+		document.write(window.x);	
+		}
+</script>
+
+</body>
+</html>

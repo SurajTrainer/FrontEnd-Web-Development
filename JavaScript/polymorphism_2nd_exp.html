@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>polymorphism exp.2</title>
+</head>
+<body>
+
+	<script>
+class A {
+	display(){
+		document.writeln("it is A polymorphism exp.");
+	}
+}
+class B extends A{
+	display(){
+		document.writeln("it is B polymorphism exp.");
+	}
+
+}
+var a = [new A(), new B()];
+
+	a.forEach(function (msg) {
+		msg.display();
+		document.writeln("<br>");
+	})
+
+
+	</script>
+
+</body>
+</html>

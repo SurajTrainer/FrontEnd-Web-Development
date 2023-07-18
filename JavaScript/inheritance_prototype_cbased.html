@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>inheritance custom class</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+	function Bike(company) {
+		this.company = company;
+	}
+	Bike.prototype.getcompany = function() {
+		return this.company;
+	}
+	function Vehicle(name,price) {
+		this.name = name;
+		this.price =  price;
+
+	}
+
+	var bike = new Bike("Honda");
+	Vehicle.prototype = bike;
+	var Vehicle = new Vehicle("shine",120000);
+
+	document.writeln(Vehicle.getcompany() + " " + Vehicle.name + " " + Vehicle.price);
+
+		
+
+
+
+	
+	</script>
+
+</body>
+</html>

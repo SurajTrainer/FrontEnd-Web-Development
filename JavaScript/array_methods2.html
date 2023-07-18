@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array mehods 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//example of the fill()
+		var arr1 = ["php","css", "c++"];
+
+document.writeln("<h3>fill()</h3>");
+var result = arr1.fill("js",2);
+		document.writeln(result);
+		document.writeln("<br>");
+
+
+	//example of the Array.from()
+document.writeln("<h3>Arrayfrom()</h3>");
+		var fromArray = Array.from("hello");
+
+		document.writeln(fromArray);
+	document.writeln("<br>");
+
+
+
+	//example of the fiter()
+document.writeln("<h3>filter()</h3>");
+	var nums = [30,40,50,60,16];
+
+	function check(value) {
+		return value > 30;
+	}
+	document.writeln(nums.filter(check));
+document.writeln("<br>");
+
+
+
+	//example of the find()
+document.writeln("<h3>find()</h3>");
+
+var findarray = nums.find(x => x>30);
+document.writeln(findarray);
+document.writeln("<br>");
+
+
+
+
+	//example of the findIndex()
+document.writeln("<h3>findIndex()</h3>");
+
+var findIndexarray = nums.findIndex(x => x>50);
+document.writeln(findIndexarray);
+document.writeln("<br>");
+
+
+
+
+	//example of the foreEach()
+document.writeln("<h3>forEach()</h3>");
+
+var value = 0;
+document.writeln("real values ,30,40,50,60,16:after forEach:" )
+nums.forEach(function(fetch){
+	document.writeln( value += fetch);
+});
+
+document.writeln("<br>");
+
+
+
+
+	</script>
+
+</body>
+</html>

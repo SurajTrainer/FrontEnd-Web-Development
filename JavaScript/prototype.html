@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>protype</title>
+</head>
+<body>
+	<script>
+function Employee(firstName,lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+// Employee.prototype.fullName = function() {
+// 	return this.firstName+ " " + this.lastName;
+// }
+
+// var emp1 = new Employee("Raghav", "Kumar");
+
+// var emp2 = new Employee("Pankaj", "Raja");
+
+
+// document.writeln(emp1.fullName() + "<br>"+""+ emp2.fullName());
+
+
+
+Employee.prototype.company = "Welcome";
+
+
+var emp1 = new Employee("Raghav", "Kumar");
+
+var emp2 = new Employee("Pankaj", "Raja");
+
+
+document.writeln(emp1.firstName + emp1.lastName + emp1.company + "<br>");
+
+document.writeln(emp2.firstName + emp2.lastName + emp2.company + "<br>");
+
+	</script>
+
+</body>	
+</html>

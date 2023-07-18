@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date object1</title>
+</head>
+<body>
+
+	<script type="text/javascript">	
+
+		// example of new Date with simple method	
+		var d1 = new Date();
+		document.writeln("<br>today day is : " + d1.getDay());
+
+			document.writeln("<br>today date is : " + d1.getDate());
+
+				document.writeln("<br>current year is : " + d1.getUTCFullYear());
+
+					document.writeln("<br>current month is : " + d1.getMonth());
+
+						document.writeln("<br>current  hours is : " + d1.getHours());
+
+							document.writeln("<br>current  minutes is : " + d1.getMinutes());
+
+								document.writeln("<br>current  seconds is : " + d1.getSeconds());
+
+								document.writeln("<br>current  seconds is : " + d1.toDateString());
+
+								document.writeln("<br>current  seconds is : " + d1.toString());
+
+								document.writeln("<br>current  seconds is : " + d1.toTimeString());
+
+
+								var day = "";
+
+								switch(d1.getDay()){
+								case 0:
+									day = "Monday";
+									break;
+									case 1:
+									day = "tuesday";
+									break;
+									case 2:
+									day = "wednesday";
+									break;
+									case 3:
+									day = "thursday";
+									break;
+									case 4:
+									day = "friday";
+									break;
+									case 5:
+									day = "saturday";
+									break;
+									case 6:
+									day = "sunday";
+									break;
+
+								}
+
+									document.writeln("<br>about day : " + day);
+
+// for word type's data we can also collect from here.
+								// with switch case
+							 
+
+	</script>
+
+</body>
+</html>

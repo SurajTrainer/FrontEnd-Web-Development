@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeakSet add with has</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var  w = new WeakSet();
+
+		var object1 = {};
+		var object2 = {};
+
+		w.add(object1);
+		w.add(object2);
+
+
+
+		document.writeln("to check 'object1'  is exist in WeakSet 'w' : " + w.has(object1) + "<br>");
+
+		document.writeln("to check 'object2'  is exist in WeakSet 'w' : " + w.has(object2)+ "<br>");
+
+		document.writeln("to check 'object3'  is exist in WeakSet 'w' : " + w.has(object3)+ "<br>");
+
+		// in weakset has error show in console.
+
+
+
+
+	</script>
+
+</body>
+</html>

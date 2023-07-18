@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>promise await</title>
+</head>
+<body>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		
+		async function Display() {
+			let promise = new Promise(function(resolve,reject){
+				setTimeout( function(){
+					resolve("I am with you")} , 3000);
+			});
+			document.getElementById('result').innerHTML = await promise;
+		}
+
+		Display();
+
+
+
+	</script>
+
+</body>
+</html>

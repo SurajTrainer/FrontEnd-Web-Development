@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>super keyword</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// parent cass
+		class companyName{
+			constructor(){
+				this.companyName = "Welcome";
+			}
+		}
+
+		// child class
+		class Employee extends companyName{
+			constructor(id,name){
+				super();
+				this.id = id;
+				this.name = name;
+			}
+		}
+		var emp = new Employee(129,"Santanu");
+		document.writeln(emp.id + " " + emp.name + " " + emp.companyName );
+
+	</script>
+
+</body>
+</html>

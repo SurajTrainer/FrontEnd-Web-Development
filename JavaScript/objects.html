@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>objects</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+
+			//example of the object literal
+			document.writeln("<h3>example of the object literal</h3>")
+		
+		var person = {
+			firstname: "sohan",
+			lastname : "kumar",
+			age: 22,
+			eyecolor:"brown",
+
+		}
+		document.writeln(person.firstname +"  "  + person.lastname +"  "  + person.age +"  "  + person.eyecolor );
+		document.writeln("<br>")
+
+
+
+
+
+		//example of the object instance
+		document.writeln("<h3>example of the object instance</h3>")
+
+		var emp = new Object();
+		emp.id  = 2;
+		emp.name = "thankur singh";
+		emp.salary = 50000;
+
+		for(value in emp){
+			document.writeln(emp[value]);
+}
+
+
+
+
+		//example of the object constructor
+		document.writeln("<h3>example of the object constructor</h3>")
+
+		function employee(id,name,salary) {
+			this.id = id;
+			this.name = name;
+			this.salary = salary;
+
+		}
+
+		var e = new employee(45,"pratik sungh",40000);
+
+		document.writeln(e.id +"  " + e.name +"  " +  e.salary);
+
+
+
+
+			//example of the object method
+		document.writeln("<h3>example of the object method</h3>")
+
+		function empl(id,name,salary) {
+			this.id = id;
+			this.name = name;
+			this.salary = salary;
+
+			this.updatesalary = updatesalary;
+
+			function updatesalary(changesalary){
+				this.salary = changesalary;
+			}
+
+		}
+
+		var e = new empl(45,"pratik sungh",40000);
+
+		document.writeln("without update salary  : "+e.id +"  " + e.name +"  " +  e.salary + "<br>");
+
+		e.updatesalary(60000); 
+		document.writeln("after the update salary:   "+e.id +"  " + e.name +"  " +  e.salary);
+
+
+
+	</script>
+
+</body>
+</html>

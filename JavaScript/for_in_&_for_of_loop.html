@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>for..in & for..of loop</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//example of the for..in loop
+		document.writeln("<h3> the example of for..in loop </h3>");
+
+		var temp = "";
+
+		var person = {
+			firstname: " jon",
+			lastname: " cgin",
+			age:  34,
+		}
+
+		for(value in person ){
+			document.writeln(person[value]);
+			// temp = temp + person[value] + " ";
+		}
+
+		// document.writeln(temp);
+			document.writeln("<br>");
+
+		document.writeln("<h3> the example of for..of loop </h3>");
+		document.writeln("<h3> the example of for..of loop Array </h3>");
+		
+
+		var alphabets = ['A', 'B', 'C', 'D' ];
+
+		for(value of alphabets){
+			document.writeln(value);
+		}
+		document.writeln("<br>");
+
+		document.writeln("<h3> the example of for..of loop </h3>");
+		document.writeln("<h3> the example of for..of loop String </h3>");
+
+		var s = "Welcome";
+
+		for(value of s){
+			document.writeln(value + "<br>") ;
+		}
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function validshow(){
+
+			var name = document.myform.firstname.value;
+
+			var lastname = document.myform.lastname.value;
+
+			var email = document.myform.email.value;
+
+			var atposition = email.indexOf('@');
+					var dotposition = email.indexOf('.');
+
+					var telephone = document.myform.telephne.value;
+
+					var password = document.myform.password.value;
+
+										var confirmpassword = document.myform.confirmpassword.value;confirm
+
+
+			if (name == null ) {
+				alert("please fill the name ");
+					return false;
+			}else{
+				return true;
+			}
+
+if ( atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
+	alert("email is not correct.")
+	return false
+}else{
+	return true;
+}
+if (isNaN(telephone)) {
+		document.getElementById('err1').innerHTML = "please enter the numerical number"
+		return false;
+}else{
+	return true;
+}
+if (password == confirmpassword) {
+	return true;
+}else{
+	return false;
+}
+		}
+
+
+
+
+	</script>
+
+	<form name="myform" method="post" onsubmit=" validshow()" >
+
+		firstname : <input type="text" name="name" ><br><br>
+			lastname : <input type="text" name="name"><br><br>
+				email : <input type="email" name="email" ><br><br>
+					telephone : <input type="text" name="telephone"><br><br><span id="err1"></span>
+						password : <input type="password" name="password" ><br><br>
+							confirmpassword : <input type="password" name="confirmpassword"><br><br>
+
+							<input type="submit" value="Submit">
+
+	</form>
+
+</body>
+</html>

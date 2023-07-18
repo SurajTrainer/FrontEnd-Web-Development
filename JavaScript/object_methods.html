@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>object  methods</title>
+</head>
+<body>
+
+	<script>
+
+		//example of object.assign()
+		var object1 = {
+			a :1,
+			b :2,
+			c :3
+		}
+			const object2 ={
+			d :1,
+			e :2,
+			f :3
+		}
+			var object3 = Object.assign({c:4,d:6},object1);
+			var object4 = Object.assign({g:400,h:200},object2);
+
+			console.log(object1,object3);
+			console.log(object2,object4);
+
+
+			//example of the object.create()
+				function fruit() {
+					this.name = "Grapes";
+
+				}
+				function fun(){
+					fruit.call(this);
+
+				}
+				fun.prototype = Object.create(fruit.prototype);
+				const app = new fun();
+
+				console.log(app);
+
+
+
+			//example of the object.freeze() & isFrzen()
+				const object5 = {
+					age:22
+				}
+
+				const object6 = Object.freeze(object5);
+				object6.age = 43;
+
+				console.log(object5);
+
+					console.log(Object.isFrozen(object5));
+
+
+
+
+				//example of the object.is()
+				const object7 = {
+					age:22
+				}
+				const object8 = {
+					age:22
+				}
+
+				console.log(Object.is(object7.age,object8.age));
+				
+
+
+				//example of the object.isExtensible()
+				const object9 = {
+					age:22
+				}
+				const object10 = {
+					age:22
+				}
+
+				console.log(Object.is(object9));
+					console.log(Object.isExtensible(object9));
+
+
+
+					//example of the object.seal & isSeal()
+				const object11 = {
+					name:"pawan"
+				}
+				const object12 = Object.seal(object11);
+					object12.name = "rajan";
+				
+
+				console.log(object12);
+
+				delete object12.name;
+
+				console.log(object12.name);
+
+				console.log(Object.isSealed(object12.name));
+				console.log(Object.isSealed(object11 .name));
+
+
+				//example of the object.values()
+				const object13 = {
+					name:"peepa",
+					age:22
+				
+				}
+				console.log(Object.values(object13));
+
+
+				
+				
+
+				
+	</script>
+
+</body>
+</html>

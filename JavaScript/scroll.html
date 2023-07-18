@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scroll example using html</title>
+
+	<style type="text/css">
+			
+			#scroll{
+				width: 200px;
+				height: 200px;
+				overflow: scroll;
+				border: 1px solid black;
+				font-size: 20px;
+
+			}
+
+	</style>
+</head>
+<body>
+	<h1>Scroll in the below div to see the change using html ..</h1>
+
+	<div id="scroll" onscroll="onScroll()">
+		Hello,<br><br>
+		Welcome to this page . This is wonder place to go faraway.. so beawarie every tiem to learn from to hrt beccaedr yp dony knw abhoyt ha how he will rezac tafter ythat on ghert pjdo i want thingking on ther eso nthi  gyues it...<br><br>
+	</div>
+
+	<script type="text/javascript">
+	
+		function onScroll() {
+			document.getElementById('scroll').style.background = "lightgreen";
+			document.getElementById('scroll').style.color = "pink";
+		}
+	
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date object</title>
+</head>
+<body>
+
+	<script type="text/javascript">	
+
+		// example of new Date with simple method	
+		var d = new Date();
+		document.writeln("<br>example of newDate : " + d);
+
+
+	// example of new Date with year,month,day,hours,minutes,seconds,milliseconds method	
+
+			var d2 = new Date(2020,11,22,20,45,23,0);
+		document.writeln("<br><br>example of newDate with y,m,d,h,m,s,m : " + d2);
+
+
+
+	// example of new Date with new Strig method	
+				var d3 = new Date("october 12,2020  11:40:15");
+		document.writeln("<br><br>example of newDate with dateSting: " + d2);
+
+
+	// example of new Date with UTC under method	
+				var d4 = new Date(0);
+		document.writeln("<br><br>example of newDate with milisecond(UTC): " + d4);
+			var d5 = new Date(100000000);
+		document.writeln("<br><br>example of newDate with milisecond(UTC): " + d5);
+
+
+
+
+	</script>
+
+</body>
+</html>

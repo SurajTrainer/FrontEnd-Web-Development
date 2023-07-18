@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class expressions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var abc = class {
+			constructor(id,name){
+				this.id = id;
+				this.name = name;
+			}
+			details(){
+					document.writeln(this.id + " " + this.name + "<br>");
+			}
+		};
+	
+		var obj1 = new abc(3,"Pajjjii");
+		obj1.details();
+				var obj2 = new abc(4,"ritik");
+				obj2.details();
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>string methods 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// exp. of replace() method
+		document.writeln("<h6>replace() method</h6> ");
+		var str1 = "your most WelCame";
+
+document.writeln(" this is incorrect : " +str1);
+		document.writeln("<br> this is after using replace()  : " + str1.replace('Came',"come"));
+		var str2 = " this is HTML, html format,we can continue with it.."
+		document.writeln("<br> this is after using replace()  : " + str2.replace(/HTML/gi,'CSS'));  
+
+
+
+				// exp. of substr() method
+		document.writeln("<h6>substr() method</h6> ");
+			document.writeln("<br> this is using substr()  : " + str2.substr(10));
+			document.writeln("<br> this is using substr()  : " + str2.substr(10,2));
+
+
+
+
+					// exp. of substring() method
+		document.writeln("<h6>substring() method</h6> ");
+			document.writeln("<br> this is using substring()  : " + str2.substring(17));
+						document.writeln("<br> this is using substring()  : " + str2.substring(17,30));
+
+
+
+					// exp. of slice() method
+		document.writeln("<h6>slice() method</h6> ");
+			document.writeln("<br> this is using slice()  : " + str2.slice(20));
+			document.writeln("<br> this is using slice()  : " + str2.slice(20,43));			
+
+
+
+
+
+					// exp. of toLowerCase() method
+		document.writeln("<h6>toLowerCase() method</h6> ");
+		var str3 = 'THIS IS THE BEST WAY TO LEARN BEACAUSE YOU CAN SAVE YOUR TIME.';
+			document.writeln("<br> this is using toLowerCase()  : " + str3.toLowerCase());
+
+
+
+
+							// exp. of toLocaleLowerCase() method
+		document.writeln("<h6>toLocaleLowerCase() method</h6> ");
+		var str3 = 'THIS IS THE BEST WAY TO LEARN BEACAUSE YOU CAN SAVE YOUR TIME.';
+			document.writeln("<br> this is using toLocaleLowerCase()  : " + str3.toLocaleLowerCase());
+
+
+
+
+							// exp. of toLocaleUpperCase() method
+		document.writeln("<h6>toLocaleUpperCase() method</h6> ");
+		var str4 = 'it is a  way to go succes in this time.';
+			document.writeln("<br> this is using toLocaleUpperCase()  : " + str4.toLocaleUpperCase());
+
+
+
+
+					// exp. of toString() method
+		document.writeln("<h6>toString() method</h6> ");
+			document.writeln("<br> this is using toString()  : " + str1.toString());
+
+
+
+
+					// exp. of valueOf() method
+		document.writeln("<h6>valueOf() method</h6> ");
+		var str5 = new String("This is the biggest Way to Learn.");
+		document.writeln(str5.valueOf());
+
+
+
+
+
+					// exp. of split() method
+		document.writeln("<h6>split() method</h6> ");
+		document.writeln(str5.split(" "));
+
+
+
+		// exp. of trim() method
+		document.writeln("<h6>trim() method</h6> ");
+		var str6 = "        We are using here trim strng method        ";
+		document.writeln(str6.trim());
+
+
+
+	</script>
+
+</body>
+</html>
+
+<!-- we can use aso negative position in substr,substring,slice -->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>static 5th method</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		class Test{
+			static display(){
+				return "this call with static methods";
+			}
+			show(){
+				document.writeln(Test.display()+"<br>");
+				return "this is not static method call";
+			}
+		}
+		var t = new Test();
+		t.show();
+
+
+	
+
+	</script>
+
+</body>
+</html>

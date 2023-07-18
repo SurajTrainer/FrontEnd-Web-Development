@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array method5</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// sort() method example
+		document.writeln("<h3>sort() array methods" );
+		var num = [2,3,5,4,8,3,2,8];
+		var language = ["css","php","python","jquary","java"];
+
+		var arr1 = [2,3,5,4,8,3,2,8];
+
+		document.writeln(num.sort());
+		document.writeln("<br>");
+		document.writeln(language.sort());
+
+
+		document.writeln("<br>");
+
+		var result = arr1.sort();
+		// document.writeln(result[0]);
+			document.writeln(result[result.length - 1]);
+
+
+
+			// splice() method example
+			// exmple.. splice(start,delete,....... elemwnt)
+		document.writeln("<h3>splice() array methods" + "<br>");
+
+		var weekdays = ["monday","tuesday","thursday","friday"];
+
+		var week = weekdays.splice(2,0,"wednesday");
+
+		document.writeln(weekdays);
+		document.writeln("<br>")
+
+			var weekdays = ["monday","tuesday","sunday","saturday","thursday","friday"];
+
+			var weeks = weekdays.splice(2,2,"wednesday");
+			document.writeln(weekdays);
+			document.writeln("<br>" + "removed arrays" +"<br>")
+	document.writeln(weeks);
+
+
+
+		document.writeln("<br>")
+
+		// toLocaleString() method example
+			
+		document.writeln("<h3>toLocaleString() array methods" + "<br>");
+
+		var weekdays = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+		var str = weekdays.toLocaleString();
+		document.writeln("<br><br> weekdays in string format :  " + str);
+		// console.log(str);
+
+		var arr2 = ['a',1,new Date('8 jan 2002 23:45:00 UTC')];
+		var str = arr2.toLocaleString('en',{timezone: "UTC"});
+		console.log(str);
+
+
+
+		document.writeln("<br>")
+
+		// toString() method example
+			
+		document.writeln("<h3>toeString() array methods" + "<br>");
+
+		var weekdays = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+	document.writeln(weekdays.toString());
+
+
+
+		document.writeln("<br>")
+
+		// unshift() method example
+			
+		document.writeln("<h3>unshift() array methods" + "<br>");
+
+		var num1 = [6,7,8];
+
+		var unshiftarray = num1.unshift(4);
+		document.writeln(num1);
+
+
+
+
+document.writeln("<br>")
+
+		// values() method example
+			
+		document.writeln("<h3>values() array methods" + "<br>");
+		var valuesarray = weekdays.values();
+		for(value of valuesarray){
+			document.writeln(value + "<br><Br>")
+		}
+		// console.log(valuesarray);
+
+		// document.writeln(valuesarray.next().value + "<br>");
+
+	</script>
+
+</body>
+</html>

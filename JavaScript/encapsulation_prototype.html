@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encapsulation prototype</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Car(name,number) {
+		var sName = name;
+		var sNumber = number;
+
+		Object.defineProperty(this,"name",{
+			get:function(){
+				return sName;
+			},
+			set:function(sName){
+				this.sName = sName;
+			}  
+		});
+	
+	Object.defineProperty(this,"number",{
+			get:function(){
+				return sNumber;
+			},
+			set:function(sNumber){
+				this.sNumber = sNumber;
+			}  
+		});
+}
+	var ca = new Car("Suzuki",23);
+
+		document.writeln(ca.name + " " + ca.number);
+</script>
+
+
+</body>
+</html>

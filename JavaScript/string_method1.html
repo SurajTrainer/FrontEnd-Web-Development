@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>string method1</title>
+</head>
+<body>
+
+<script>
+
+document.writeln("<h4>string charAt()</h4>");
+	//exp. of using charAt()
+var str = "hello , How are you?";
+
+
+document.writeln(str.charAt(8));
+
+
+document.writeln("<br>");
+
+
+
+document.writeln("<h4>string charCodeAt()(object)</h4>");
+//exp. of using charCodeAt()
+document.writeln(str.charCodeAt(8));
+document.writeln("<br>");
+
+
+
+document.writeln("<h4>string concat()(object)</h4>");
+//exp. of using concat()
+
+var str1 = "okkkk sir??";
+document.writeln(str.concat(str1));
+document.writeln("<br>");
+
+
+
+
+document.writeln("<h4>string indexOf()(object)</h4>");
+//exp. of using indexOf()
+document.writeln(str.indexOf("r"));
+document.writeln(str.indexOf("r",6));
+document.writeln("<br>");
+
+
+
+
+document.writeln("<h4>string lastIndexOf()(object)</h4>");
+//exp. of using lastIndexOf()
+document.writeln(str.lastIndexOf('y'));
+document.writeln("<br>");
+
+
+
+
+document.writeln("<h4>string search()(object)</h4>");
+//exp. of using search()
+
+var str2 = "this is the learnig side tp learn ot of imrtat things. js is most important lnguages.. Js is god.";
+document.writeln(str2.search('js')  + "<br>");
+
+document.writeln(str2.search('Js')+ "<br>");
+
+
+document.writeln(str2.search(/js/i)  + "<br>");//it is case sensitive (i = ignorable)
+document.writeln("<br>");
+
+
+
+document.writeln("<h4>string match()(object)</h4>");
+//exp. of using match()
+document.writeln(str2.match('Js')+ "<br>");
+
+
+</script>
+
+</body>
+</html>

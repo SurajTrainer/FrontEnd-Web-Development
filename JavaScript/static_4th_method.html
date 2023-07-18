@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>static 4th method</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		class Test{
+
+			constructor(){
+				document.writeln(Test.display()+ "<br>");
+				document.writeln(this.constructor.display());
+			}
+
+			static display(){
+				return "this is return of static method";
+			}
+		}
+	
+
+		var t= new Test;
+	
+
+	</script>
+
+</body>
+</html>

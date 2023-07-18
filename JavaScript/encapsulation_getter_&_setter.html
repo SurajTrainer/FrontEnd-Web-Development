@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encapsulation getter & setter</title>
+</head>
+<body>
+<script type="text/javascript">
+	class Bikes{
+		constructor(){
+		var name;
+		var number;
+
+	}
+	getName(){
+		return this.name;
+	}
+	setName(name){
+		this.name = name;
+	}
+	getNumber(){
+		return this.number;
+	}
+	setNumber(number){
+		this.number = number;
+	}
+}
+
+	var bike = new Bikes();
+	bike.setName("Bugaddi");
+	bike.setNumber(22);
+
+	document.writeln(bike.getName() + " "  + bike.getNumber());
+
+
+</script>
+
+
+</body>
+</html>

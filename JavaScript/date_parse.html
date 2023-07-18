@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date parse()</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var d1 = new Date("2020-01-01");
+		var d2 = "June 16,2020";
+		var d3 = "June 46,2020"; //this will show NaN output
+
+		var result = Date.parse(d1);
+		var result2 = Date.parse(d2);
+		var result3 = Date.parse(d3);
+
+		document.writeln("Result after parsing in milliseconds : " + result + "<br>");
+
+		document.writeln("Result2 after parsing in milliseconds : " + result2+ "<br>");
+
+		document.writeln("Result3 after parsing in milliseconds : " + result3+ "<br>");
+
+	</script>
+
+</body>
+</html>
+
+
+

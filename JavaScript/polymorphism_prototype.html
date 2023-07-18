@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>polymorphism prototype</title>
+</head>
+<body>
+
+	<script>
+ function A() {
+ 	
+ }
+ A.prototype.display = function() {
+ 	return "A is as exampe of prototype polymorphism"
+ }
+ function B(){
+ 	 	// return "A is as exampe of prototype polymorphism"
+  }
+
+ 	B.prototype = Object.create(A.prototype);
+
+ 	var a = [new A(), new B()]
+
+ 	a.forEach(function(message)
+ 	{
+ 		document.writeln(message.display() + "<br>");
+ 	})
+
+
+
+	</script>
+
+</body>
+</html>

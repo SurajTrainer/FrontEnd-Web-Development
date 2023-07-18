@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Set object with delete</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+			
+			var s = new Set();
+
+
+			s.add("HTML");
+			s.add("CSS");
+			s.add("JAVAscript");
+
+			 document.writeln("Before deleting CSS frm Set : <br>");
+			
+			for(value of s){
+				document.writeln(value + "<br>");
+			}
+
+			s. delete('CSS');
+
+			 document.writeln("After deleting CSS frm Set :<br> " );
+
+			 for(value of s){
+				document.writeln(value + "<br>");
+			}
+
+
+	</script>
+
+</body>
+</html>

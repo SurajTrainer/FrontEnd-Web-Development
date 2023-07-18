@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>inheritance build class</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		class Moment extends Date{
+			constructor(){
+				super()
+			}
+		}
+		var m = new Moment();
+		document.writeln("current date : "  + m.getDate() + " - "+(m.getMonth()+1) +" - " + m.getFullYear());
+
+	</script>
+
+</body>
+</html>

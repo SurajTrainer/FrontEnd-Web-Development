@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>submit form</title>
+</head>
+<body align="center">
+
+	<h4>Create your Account</h4>
+
+	<table cellspacing="2" align="center" cellpadding="7" border="2">
+
+		<tr>
+			<td>Name</td>
+			<td><input type="text" placeholder="Enter your name" id="name"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" placeholder="Enter your Email" id="email"></td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td><input type="text" placeholder="Enter your password" id="password"></td>
+		</tr>
+		<tr>
+			<td>cpassword</td>
+			<td><input type="text" placeholder="Enter your cpassword" id="cpassword"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Create" onclick="Account()"></td>
+		</tr>
+
+	</table>
+
+	<script type="text/javascript">
+			
+			function Account() {
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var password = document.getElementById('password').value;
+				var cpassword = document.getElementById('cpassword').value;
+
+				var letters = /^[A-Za-z]+$/;
+				var email_value = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+				if (name == "" || email == "" || password == "" || cpassword == "" ){
+					alert("Enter all the details");
+				}
+				else if(!letters.test(name)){
+					alert("Name is incorrect ");
+				}
+				else if(!email_value.test(email)){
+					alert("email id is  not correct ");
+				}
+				else if(password != cpassword){
+					alert("password is not matching");
+				}
+				else if(document.getElementById('password').value.length > 12){
+					alert("maxiam capable are 12");
+				}
+				else if(document.getElementById('password').value.length < 6){
+					alert("min  values are 6");
+				}
+				else{
+					alert("your Account has been crested succesfuly");
+					window.location = "https://www.learnvern.com";
+				}
+
+
+
+
+
+			}
+
+
+
+	</script>
+
+</body>
+</html>
+

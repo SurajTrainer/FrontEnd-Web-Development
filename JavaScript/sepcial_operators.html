@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>special operators</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// here are special  types.
+		// ?:, , delete,in,instantof,new,typeof,void
+
+		// class abc();
+
+
+		var x = true;
+		var y = false;
+
+		var person = {
+					firstname: "Surya",
+					lastname: "syngh",
+					age:22,
+					eyecolor:"brown"
+				};
+
+		document.write("<h3> special operator </h3>")
+
+		/*
+		if(condition){
+		exicude if condition is true
+		}else{
+			exicude if condition is false
+		}
+		*/
+
+			//?: conditional operator
+		var z = x  ? 4 : 7;
+		document.write("value of z is: " + z);	
+		document.write("<br>");
+
+			//',' comma operator
+		let a = (1,2,3);
+		document.write("value of a is:" + a);
+		document.write("<br>");
+
+			//delete operator
+		delete person.lastname
+		document.write("Deleted Lastname  from the object :  " + person.lastname);
+		document.write("<br>");
+
+		// in operator
+			var z = 'age' in person ? true : false;
+		document.write("value in the  operator: " + z);	
+		document.write("<br>");
+
+		// instance of operator
+		document.write("if person is a instance of Array :"  + (person instanceof Array));
+		document.write("<br>");
+
+		// new operator
+		// var b = new abc();
+			document.write("<br>");
+
+		// typeof operator
+		document.write("type of x is: "  + (typeof x));
+		document.write("<br>");
+
+		//void  operator
+		document.write("<br>");
+		javaScript: void func();
+		// we can use it whenever  we are not want any return value.
+		// we can aso use it out of operators.
+
+
+
+	</script>
+ 
+   <!-- here a exp. of void operator
+   		<a href="javaScript:void(0)">Hello</a>	 -->
+
+</body>
+</html>

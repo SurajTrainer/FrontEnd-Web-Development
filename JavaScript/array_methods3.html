@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array methods 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//example of  inlcudes() method array
+		document.writeln("<h3> includes() exp. " + "<br>");
+		var arr1 = ["c","s++","thi","java"];
+		var arr2 = [10,30,40,58,60];
+		document.writeln(arr1.includes("java"));
+			document.writeln("<br>");
+
+
+
+			//example of  indexOf() method array
+			document.writeln("<h3> indexOf() exp. " + "<br>");
+				document.writeln(arr1.indexOf("java"));
+			document.writeln("<br>");
+
+
+
+
+			//example of  isArray() method array
+
+			// it checks the value is really array or not
+			document.writeln("<h3> isArray() exp. " + "<br>");
+				document.writeln(Array.isArray(arr1));
+			document.writeln("<br>");
+
+				document.writeln(Array.isArray(1,2,3,4));
+			document.writeln("<br>");
+
+
+
+			//example of  join() method array
+			document.writeln("<h3> join() exp. " + "<br>");
+
+			document.writeln(arr1.join("- - - "));
+
+
+
+	//example of  keys() method array
+			document.writeln("<h3> keys() exp. " + "<br>");
+
+			var keyarray = arr1.keys();
+			
+			for (k of keyarray){
+				document.writeln(k + "<br>");
+			}
+
+
+
+			//example of  lastIndexOf() method array
+			document.writeln("<h3> lastIndexOf() exp. " + "<br>");
+
+			document.writeln(arr1.lastIndexOf("java"));
+
+
+
+
+			//example of  map() method array
+			document.writeln("<h3> map() exp. " + "<br>");
+			var mapArray = arr2.map( x => x/4);
+
+			document.writeln(mapArray);
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class Re-decalring</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var abc = class {
+			constructor(id,name){
+				this.id = id;
+				this.name = name;
+			}
+			details(){
+					document.writeln(this.id + " " + this.name + "<br>");
+			}
+		};
+	
+		var obj4 = new abc(5,"Kala singh");
+		obj4.details();
+				var obj6 = new abc(6,"Kabuter");
+				obj6.details();
+
+
+	</script>
+
+</body>
+</html>

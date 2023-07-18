@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>number mehod1</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		document.writeln("<h3> number methods</h3>");
+
+
+
+document.writeln("<br><h4> isFinite</h4>");
+		document.writeln("isFinite '3'  :     " + Number.isFinite(3));
+
+				document.writeln("<br>isFinite 'g'  :     " + Number.isFinite("g"));
+
+						document.writeln("<br>isFinite '-5'  :     " + Number.isFinite(-5));
+
+
+								document.writeln("<br>isFinite '0,10'  :     " + Number.isFinite(0,10));
+
+
+
+document.writeln("<br><h4> isInteger</h4>");
+								document.writeln("isInteger '3'  :     " + Number.isInteger(3));
+
+				document.writeln("<br>isInteger 'g'  :     " + Number.isInteger("g"));
+
+						document.writeln("<br>isInteger '-5'  :     " + Number.isInteger(-5));
+
+
+								document.writeln("<br>isInteger '5.67'  :     " + Number.isInteger(5.67));
+
+
+
+
+		document.writeln("<br><h4> parseFloat</h4>");
+
+						document.writeln("convert '64' to parseFloat 64 :     " + Number.parseFloat("64"));
+
+						document.writeln("<br>convert 'Hello' to parseFloat Hello :     " + Number.parseFloat("Hello"));
+
+					document.writeln("<br>convert '44Hello' to parseFloat 44Hello :     " + Number.parseFloat("44Hello"));
+
+
+
+		document.writeln("<br><h4> parseInt</h4>");
+
+						document.writeln("convert '64' to parseInt 64 :     " + Number.parseInt("64"));
+
+						document.writeln("<br>convert 'Hello' to parseInt Hello :     " + Number.parseInt("Hello"));
+
+					document.writeln("<br>convert '55Hello' to parseFloat 55Hello :     " + Number.parseInt("55Hello"));
+
+
+
+		document.writeln("<br><h4> isExponential</h4>");
+		var a = 2;
+		var b = 5;
+
+		document.writeln("convert '2' toExponential number :     " + a.toExponential());
+
+			document.writeln("<br>convert '5' toExponential number :     " + b.toExponential());
+
+
+
+
+
+
+					document.writeln("<br><h4> toFixed</h4>");
+
+						document.writeln("convert PI in Fixed value  :     " + Math.PI.toFixed(3));
+
+
+
+
+
+					document.writeln("<br><h4> toPrecision()</h4>");
+
+						document.writeln("convert PI in Precision  value  :     " + Math.PI.toPrecision(3));
+
+
+
+						document.writeln("<br><h4> toString()</h4>");
+
+						document.writeln("convert '2' in String  value  :     " + a.toString());
+
+	</script>
+
+</body>
+</html>

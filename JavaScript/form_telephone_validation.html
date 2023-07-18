@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form telephone Validation </title>
+	<style type="text/css">	
+		h3{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<script type="text/javascript">
+function validform() {
+	var telephone = document.myform.telephone.value;
+	if (isNaN(telephone)) {
+		document.getElementById('errort').innerHTML = "Enter telephone no. is not correct."
+		return false;
+	} else{
+		return true;
+	}
+}
+		
+	</script>
+<h3>Registration Form</h3>
+	<form  name="myform" method="post" onsubmit="return validform()">
+	Telephone Number : <input type="text" name="telephone" >	<span id="errort" > ok oo\kk</span><br><br>
+	
+
+		<input type="submit" value="Submit">
+
+		
+	</form>
+
+</body>
+</html>
+

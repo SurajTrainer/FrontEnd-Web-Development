@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>callback 2nd exp</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function getData(callback) {
+			
+			var name = prompt("Welcome to my code \n Please  enter your name : " );
+
+			var age = prompt("Please enter your age :  ");
+
+			callback(name,age);
+		}
+
+		function showData(name,age) {
+			alert("Your name is : "+ name + "\n age is : " + age);
+		}
+
+		function showDescription(a,b) {
+			document.writeln("name : "+ a+"<br>");
+			document.writeln("age : "+ b+"<br>");
+		}
+
+		// getData(showData);
+			getData(showDescription);
+
+
+
+
+	</script>
+
+</body>
+</html>
