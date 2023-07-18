@@ -1,0 +1,1046 @@
+from app.js  
+<Student 
+    name="Surya"
+    age={20}
+    />
+  
+import Header from './Header';
+import Student from './component/Student';
+
+// using inside the jsx
+login = true
+login == false ? <Header2/> : <div style={{color:'black'}}>Dekh l bhaii.</div>
+
+
+  let login = false;
+
+{
+  (()=> {
+    if(login){
+      return <h1 style={{color:'black'}}>Dekh l bhai.</h1>
+    }
+    else{
+      return <h1 style={{color:'black'}}>Mat dilh Dekh l bhai.</h1>
+    }
+  })()
+}
+
+
+
+App.js   (all data)
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import Movie from './component/Movie';
+import movies from './movies.json';
+
+
+function App() {
+
+  return (
+    <div  className="App"> 
+        
+      <Header2/>
+      <div className='main'>
+        {
+          movies.map((element,index) =>{
+            return(
+              <Movie
+              key={index}
+              title={element.Title} 
+              year={element.Year}
+              img={element.Poster}
+              /> 
+            )
+          })
+        }
+           
+      </div>
+       </div>
+  );
+}
+
+
+
+
+
+(App.js with name , email . for deleting the content and also filling)
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button'; 
+import AddIcon from '@mui/icons-material/Add';
+import { useState } from 'react';
+
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+
+
+
+
+function App() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [data, setData] = useState([]);
+  
+
+  const addData = () => {
+    setData([ ...data, {name ,email}])
+    setName("");
+    setEmail("");
+
+  }
+
+  const removeItem = (index) => {
+    let arr = data;
+    arr.splice(index, 1);
+    setData([...arr]); 
+  }
+ 
+  return (
+    <div className="App">
+      <Header2 />
+      {/* Form Session */}
+      <div className='form'>
+        <Stack spacing={2} direction="row">
+          <TextField
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            id="outlined-basic"
+            label="name"
+            variant="outlined"
+          />
+          <TextField
+           value={email}
+           onChange={(event) => setEmail(event.target.value)}
+            id="outlined-basic"
+            label="email"
+            variant="outlined"
+          />
+
+          <Button onClick={addData} color='success' variant="contained">
+            <AddIcon />
+          </Button>
+        </Stack>
+      </div>
+      {/* data Session */}
+<div className='data'>
+    <div className='data_val'>
+        <h1>Name</h1>
+        <h1>Email</h1>
+        <h1>Remove</h1>
+    </div>
+    {
+      data.map((element,index) => {
+        return (
+          <div key={index} className='data_val'>
+    <h1>{element.name}</h1>
+    <h1>{element.email}</h1>
+
+    <Stack>
+        <Button onClick={() => removeItem(index)}  color='error' variant="contained">
+            <DeleteForeverIcon />
+          </Button> 
+    </Stack>
+   
+</div>
+        )
+      })
+    }
+</div>
+    </div>
+  );
+}
+
+export default App;
+
+
+export default App;
+
+
+Header.js   (all data)
+
+import Footer from "./component/Footer";
+import "./component/header.css";
+const Header = () => {    
+    return(
+        <div style={{backgroundColor:'pink'}} className="header">
+            <h1>this is a Header</h1>
+        <p>this is the p element</p>
+        <Footer/>
+        </div>
+    )
+}
+
+// function Header() {
+//     return(
+//         <h1>this is a Header</h1>
+//     )
+// }
+
+// function Footer()  {
+//     return(
+//         <h1>footer example given by me.</h1>
+//     )
+// }
+export  default Header;
+// export  {Footer};
+
+
+
+
+(CSS)
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+
+
+(example of the useState Hook)with App.js
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import React,{useState} from 'react';
+
+
+function App() {
+
+  const [num, setNum] = useState (1);
+
+  function inc(){
+    setNum(num+6);
+  }
+
+  function dec(n){
+    setNum(num-n);
+  }
+
+  return (
+    <div  className="App"> 
+        <Header2/>
+        <div className='main'>
+          <h1 className='heading'>{num}</h1>
+          <div className='buttons'>
+            <button className='btn' onClick={inc}>increment</button>
+            <button className='btn' onClick={() => dec(5)}>decrement</button>
+            {/* two ways to define values. two method mentioned on here. */}
+          </div>
+       
+        </div>
+       </div>
+  );
+}
+
+export default App;
+
+
+
+
+.....
+
+(this is complete css yet about the project.css)
+.header{
+    padding: 10px;
+    background-color: rgb(171, 203, 192);
+}
+body{
+    text-align: center;
+}
+.movie{
+    color: black(17, 1, 240, 0.287);
+    background-color: chartreuse;
+    border: 1px solid blue;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-wrap: wrap;
+    padding: 14px;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.btn{
+    background-color: #8e44ad;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.heading{
+    color: white;
+    font-size: 80px;
+    margin: 10px;
+}
+.movie img{
+       
+    width: 100%;
+    height: 400px;
+
+}
+
+
+
+
+
+
+(spread operators examples )
+  const fullname = ["pankaj", "neeraj"]
+  const biodata = [1, ...fullname, 23,"male"]
+  console.log(biodata);
+
+2nd example
+  const cargaming = ["maruti car racing", "aulto car racing", "lamborgini car racing "];
+  const bikegaming = ["splender bike racing", "mt 15 bike racing", "yamaha bike racing"];
+  const game = [...cargaming,...bikegaming];
+  console.log(game);
+
+3rd example
+
+  var shootgaming = ["call of duty","player unknown batteleground",'Freefire','ludo'];
+  var [first,...others] = shootgaming;
+
+  console.log(first);
+  console.log(others);
+
+
+
+4th example
+ const fullName = {
+      fname : "Radha",
+      lname : "KUmari"
+    }
+    const fullBio = {
+     vill : "tripti",
+     state : "uttarakhand"
+    }
+    const specialPerson = {
+      father : "kamal Singh",
+      mother : "kasturba bai"
+    }
+    const biodata = {
+      id : 1,
+      ...fullName,
+      ...fullBio,
+      ...specialPerson,
+      age : 34,
+      gender : "male"
+    }
+      console.log(biodata);
+
+
+
+
+
+(app.js )  using the usestate()
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button'; 
+import AddIcon from '@mui/icons-material/Add';
+import { useState } from 'react';
+
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+
+
+
+
+function App() {
+
+  const [form, setForm] = useState("");
+  const [data, setData] = useState([]);
+
+   
+
+  const addData = () => {
+    setData([ ...data, form])
+   setForm({form});
+
+  }
+
+  const removeItem = (index) => {
+    let arr = data;
+    arr.splice(index, 1);
+    setData([...arr]); 
+  }
+ 
+  return (
+    <div className="App">
+      <Header2 />
+      {/* Form Session */}
+      <div className='form'>
+        <Stack spacing={2} direction="row">
+          <TextField
+            value={form.name}
+            onChange={(event) => setForm({form, name: event.target.value})}
+            id="outlined-basic"
+            label="name"
+            variant="outlined"
+          />
+          <TextField
+           value={form.email}
+           onChange={(event) => setForm({...form, email: event.target.value})}
+            id="outlined-basic"
+            label="email"
+            variant="outlined"
+          />
+
+          <Button onClick={addData} color='success' variant="contained">
+            <AddIcon />
+          </Button>
+        </Stack>
+      </div>
+      {/* data Session */}
+<div className='data'>
+    <div className='data_val'>
+        <h1>Name</h1>
+        <h1>Email</h1>
+        <h1>Remove</h1>
+    </div>
+    {
+      data.map((element,index) => {
+        return (
+          <div key={index} className='data_val'>
+    <h1>{element.name}</h1>
+    <h1>{element.email}</h1>
+
+    <Stack>
+        <Button onClick={() => removeItem(index)}  color='error' variant="contained">
+            <DeleteForeverIcon />
+          </Button> 
+    </Stack>
+   
+</div>
+        )
+      })
+    }
+</div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+it is also similar as some effect 
+
+const handlePress = (event) => {
+  if(event.key == 'Enter'){
+    addData();
+  }
+  console.log(event.key);
+}
+
+TextField
+ onkeypress={(e) => handlePress(e)}
+/>
+
+
+
+
+(connecting with api) 
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import { useState, useEffect } from 'react';
+
+function App() {
+
+    const [state, setState] = useState(2);
+    const [data, setData] = useState([]);
+
+    
+
+  useEffect(() => {
+    // window.alert("useEfect Called")
+
+    async function getData(){
+      const get = await fetch(`https://hub.dummyapis.com/employee?noofRecords=${state}&idStarts=1001`)
+
+      const res =  await get.json();
+
+      setData(res);
+      console.log(res);
+    }
+
+    
+    getData();
+
+    document.title = `(${state}) Employee Online`;
+  },[state])
+    // console.log("Function Body")
+
+  return (
+    <div>
+      <Header2/>
+      {/* {console.log("inside JSX")} */}
+      <button onClick={() => setState(state+1)}>Click me {state}</button>
+      {
+        data.map((element, index) => {
+          return (
+            <div className='data2' key={index}>
+              <h4>{element.id}</h4>
+              <h4>{element.firstName}</h4>
+              <h4>{element.lastName}</h4>
+              <h4>{element.email}</h4>
+            </div>
+          )
+        })
+      }
+
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+// using the Home About Contact
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import { useState, useEffect } from 'react';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Error from './component/Error';
+
+function App() {
+
+    
+
+  return (
+    <Router>
+    <div>
+      <Header2/>
+
+      <Routes>
+        {/* Home */}
+          <Route path="/" element={<Home/>}/>
+          
+          {/* About us */}
+          <Route path="/about" element= {<About/>}/>
+          {/* Contact */}
+          <Route path="/contact" element= {<Contact/>}/>
+          {/* Error */}
+          <Route path="*" element= {<Error/>}/>
+        </Routes>
+
+    </div>
+    </Router>
+  )
+}
+
+export default App;
+
+
+//also using here Header2.js
+import { color } from '@mui/system'
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+
+const Header2 = () => {
+  return (
+    <div className='header'>
+   <Link to={'/'}> <h1 style={{color: 'white', cursor:'pointer'}}>Home</h1> </Link>
+
+   <Link to={'/about'}> <h1 style={{color: 'white', cursor:'pointer'}}>About</h1> </Link>
+
+  <Link to={'/contact'}>  <h1 style={{color: 'white', cursor:'pointer'}}>Contact</h1> </Link>
+
+    </div>
+  )
+}
+
+export default Header2
+
+
+
+
+
+(for usedetails releted  )App.js
+
+import './component/Project.css';
+import Header2 from './component/Header2';
+import { useState, useEffect } from 'react';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Error from './component/Error';
+
+import Insta from './component/Insta';
+import Mail from './component/Mail';
+import Userdetails from  './component/Userdetails';
+
+function App() {
+
+    
+
+  return (
+    <Router>
+    <div>
+      <Header2/>
+
+      <Routes>
+        {/* Home */}
+        {/* we csn also show it default home page  using index */}
+          <Route path="/" element={<Home/>}/>
+
+          <Route path="/app/:userId" element= {<Userdetails/>}/>
+          
+          {/* About us */}
+          <Route path="/about" element= {<About/>}/>
+
+          {/* Contact */}
+          <Route path="/contact" element= {<Contact/>}>
+
+          <Route index  element= {<Insta/> }/>
+                <Route path='Insta' element= {<Insta/> }/>
+                <Route path='Mail' element= {<Mail/> }/>
+            </Route>
+
+          {/* Error */}
+          <Route path="*" element= {<Error/>}/>
+
+        </Routes>
+
+    </div>
+    </Router>
+  )
+}
+
+
+
+
+export default App;
+
+
+
+(ComA.js,ComB, ComC) complete data from Context API
+import React from 'react'
+import ComB from './ComB'
+
+const ComA = ({data}) => {
+  return (
+    <>
+    <div>ComA</div>
+    <ComB  data={data}/>
+    </>
+  )
+}
+
+export default ComA
+
+
+
+import React from 'react'
+import ComC from './ComC'
+
+const ComB = ({data}) => {
+  return (
+    <>
+    <div>ComB</div>
+    <ComC data={data}/>
+    </>
+  )
+}
+
+export default ComB
+
+
+import React from 'react'
+
+const ComC = ({data}) => {
+  return (
+    <>
+        <div>ComC</div>
+        
+        <h1>{data}</h1>
+    </>
+  )
+}
+
+export default ComC
+
+
+(App.js) for context API
+
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState ,createContext} from 'react';
+import ComA from './component/ComA';
+
+
+const AppState = createContext();
+// also can use with context cnange
+const NameState = createContext();
+
+function App() {
+
+    const [data, setData] = useState("ContextAPI") 
+
+    // we can also use it to send multiple data once a time
+    const [name, setName] = useState({name:'Radha', age: 24}) ;
+
+  return (  
+    <>
+ {/* <AppState.Provider value={data}> */}
+  {/* using the multipe values</> */}
+      <AppState.Provider value={{data}}>
+        <NameState.Provider value={name}>
+      <Header />
+      <ComA />
+      </NameState.Provider>
+   </AppState.Provider>  
+       </>
+  )
+}
+
+
+
+
+export default App;
+export {AppState,NameState}
+
+
+
+
+(App.js) example of the useRef Hook
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState , useEffect,useRef} from 'react';
+
+
+
+// useRef can also use with useState but it will mot work fast
+
+function App() {
+  // const [input,setInput] = useState("");
+
+  // const counter = useRef(0);
+
+  // const prevState = useRef("");
+
+  const inputField = useRef();
+
+  //   useEffect(() => {
+  //       counter.current = counter.current + 1;
+  //   })
+
+  //   useEffect(() => {
+  //     prevState.current = input;
+  // },[input])
+
+    
+  // this is be use with useState
+    // const formHandler = (e) => {
+    //   setInput(e.target.value);
+    // }
+
+    const clickHandler = ()=> {
+        // inputField.current.focus();
+        inputField.current.value = "Kya krega yrr dekh ke ";
+
+        inputField.current.style.background = "lightgreen";
+    }
+
+    
+  return (  
+    <>
+
+      <Header />
+      {/* <input ref={inputField} value={input} onChange={formHandler}/> */}
+
+      <input ref={inputField}/>
+
+      {/* <h4>Application has been rendered {counter.current} times</h4>
+      <h4>Previous data is : {prevState.current} </h4> */}
+
+        <button onClick={clickHandler}> Click Me</button>
+  
+       </>
+  )
+}
+
+export default App;
+
+
+
+(App.js) example of the usereducer Hook
+.App {
+  text-align: center;
+  background-color: white;
+  color: aliceblue;
+  min-height: 100vh;
+  
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+(Custom hook) App.js  -- using with useFetch
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState , useEffect  } from 'react';
+import useFetch from './component/useFetch';
+
+
+
+function App() {
+
+  const [data] = useFetch("https://hub.dummyapis.com/employee?noofRecords=5&idStarts=1001")
+    
+  return (  
+    <>
+
+      <Header />
+        {data.map((e,i) => {
+          return <h1 key={i}>{e.firstName}</h1>
+        })
+      }
+
+       </>
+  )
+}
+
+export default App;
+
+
+
+
+
+App.js)  Example of the useMemo Hook
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState , useEffect ,useMemo } from 'react';
+import useFetch from './component/useFetch';
+
+
+
+function App() {
+
+  const [count, setCount] = useState(0);
+  const [name, setName] = useState("");
+
+    const expensiveCalculation = (num) => {
+      console.log("counting")
+      for (let i = 0; i < 10000000; i++) {
+      
+      }
+      return num;
+    };
+
+    const calculation = useMemo(() =>
+    expensiveCalculation(count)
+      ,[name]);
+    
+  return (  
+    <>
+
+      <Header />
+         <button onClick={() => setCount(count + 1)}>Increment</button>
+         <h1>Count : {count}</h1>
+      
+          <input onChange={(e) => setName(e.target.value)} />
+          <h1> Name : {name}</h1>
+       </>
+  )
+}
+
+
+
+
+export default App;
+
+
+
+
+(App.js) useCallback Hook 
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState , useEffect ,useCallback } from 'react';
+import Todos from './component/Todos';
+
+
+
+function App() {
+
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState([]);
+
+    const increment = () => {
+      setCount((c) => c + 1);
+    }
+
+    const addTodo = useCallback(() =>  {
+      setTodos((t) => [...t, "New Todo"])
+    },[todos])
+   
+    
+  return (  
+    <>
+      <Header />
+        <div> 
+          Count : {count}
+          <button onClick={increment}>+</button>
+        </div> 
+
+        <hr/>
+
+          <Todos todos={todos} addTodo={addTodo}/>
+       </>
+  )
+}
+
+export default App;
+
+
+
+
+
+( Class releted)
+	in between 
+	export default class Comp extends React.Component {
+	render() {
+		return (
+		<h2>{this.props.name}</h2>
+	)
+
+	}	
+}
+
+
+
+
+
+(App.js ) Loader  ,toastify
+
+import './component/Project.css';
+import Header from './component/Header';
+import { useState } from 'react';
+import {Circles, CirclesWithBar,Dna,Vortex,FidgetSpinner} from 'react-loader-spinner';
+import { useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+function App() {
+
+  const [loading, setloading] = useState(false);
+  const [data, setData] = useState([]);
+    
+    useEffect(() => {
+      setloading(true);
+      async function getData() {
+       const res = await fetch('https://hub.dummyapis.com/employee?noofRecords=5&idStarts=1001')
+        const finalRes = await res.json();
+        setData(finalRes);
+        setloading(false);
+        toast.success("scuuseefully fathced data")
+
+      }
+
+      getData();
+    },[])
+
+  return (  
+    <>
+      <Header />
+      <ToastContainer />
+       <div className='main'>
+
+        {
+          loading ? 
+          <FidgetSpinner />
+          :
+          data.map((e, i ) => {
+            return (
+              <p key={i}>{e.email}</p>
+            )
+          })
+        }
+       </div>
+      </>
+  )
+}
+
+export default App;
+
+
+ 
