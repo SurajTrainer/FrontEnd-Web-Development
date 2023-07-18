@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distructuring Array</title>
+</head>
+<body>
+    <h1>Distructuring Array</h1>
+    <script>
+       let fruits = ["mango","apple","papaya","kiwi"];
+
+       // old types 
+        // let fruit1 = fruits[2];
+        // console.log(fruit1)
+
+        //  newtypes
+        // let [fruit1,fruit2,fruit3] = fruits;
+        // console.log(fruit1)
+        // console.log(fruit2)
+        // console.log(fruit3)
+
+        // if we not want to  show 2nd number value
+        // let [fruit1,,fruit3,fruit4="unknown fruit"] = fruits;
+        // console.log(fruit1)
+        // // console.log(fruit2)
+        // console.log(fruit3)
+        // console.log(fruit4)
+
+
+        // using with (...) rest operator
+        let [fruit1,...fruitx]=fruits;
+        console.log(fruitx)
+    </script>
+</body>
+</html>

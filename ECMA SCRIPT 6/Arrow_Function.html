@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <script>
+        let data = [10,20,30,40,50]
+
+        // first type : name Function
+        function test(){
+            return 1;
+        }
+
+        // second type : array Function
+        let test2=function(){
+            return 1
+        }
+
+        // third types : Arrow Function
+        let test3 =()=> {
+            return 1
+        }
+        console.log(test())
+        console.log(test2())
+        console.log(test3())
+
+        // map function use
+        // let newData = data.map(function(item){
+        //     return item*2;
+        // })   
+        // let newData = data.map((item)=>item*3)
+        // console.log(newData)
+
+        let item = {
+            name:"krishan",
+            getName:function(){
+                console.log("normal",this)
+            },
+            getNameArrow:()=>{
+                console.log("arrow F exmp.",this)
+            }
+        }
+        item.getName();
+        item.getNameArrow();
+
+        </script>
+</body>
+</html>

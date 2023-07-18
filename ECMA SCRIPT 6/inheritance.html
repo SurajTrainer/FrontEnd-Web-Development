@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+    <h1>inheritance</h1>
+    <script>
+        class category{
+            dryfruits(){
+                return "Almond is a dryfruits"
+            }
+            coldfruits(){
+                return "papaya is a coldy fruits"
+            }
+        }
+
+        class fruits extends category{
+            constructor(){
+
+                super()
+               console.log("constructor")
+            }
+            getfruits(){
+                
+                return "you got apple"
+            }
+        }
+        let f1= new fruits;
+        let c1= new category;
+        // console.log(f1.getfruits());
+        console.log(f1.dryfruits());
+        console.log(c1.coldfruits())
+
+    
+    </script>
+</body>
+</html>

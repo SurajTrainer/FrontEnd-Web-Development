@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope with This</title>
+</head>
+<body>
+    <h1>Lexcal Scope with This</h1>
+    <script>
+        let data={
+            list:"friends",
+            name:["Pradeep","abhishek","anil","ravinder"],
+            getfriends:function(){
+                // let that=this.list;
+                // console.log(this.name)
+                // this.name.map(function(item){
+                //     // console.log("friends :",item)
+                //     console.log(that,item)
+                // })
+
+                // the below is example of the Lexical Scope for this
+                this.name.map((item)=>{
+                    // arrow function have not self this . so it took 'this' from parent element
+                    console.log(this.list,item)
+                })
+            }
+        }
+        data.getfriends();
+    </script>
+</body>
+</html>

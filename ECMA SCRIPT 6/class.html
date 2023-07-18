@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class </title>
+</head>
+<body>
+    <h1>Class</h1>
+
+    <script>
+        class fruits{
+            name="orange"
+            constructor(){
+                console.log("constructor",this.name);
+            }
+            getFruits(){
+                return "apple"
+            }
+        }
+        let f1 = new fruits;
+        console.log(f1.getFruits())
+        //second way to defind
+        console.log(f1.name)
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <script>
+
+        // Simple using Operators
+        // let fruits = ["apple","mango","papaya"]
+        // function printAll(a,b,c){
+        //     console.log(a,b,c)
+        // }
+        // printAll(fruits[0],fruits[1],fruits[2])
+
+
+            // Using with Spread Oprator
+        // let fruits = ["apple","mango","papaya"]
+        // function printAll(a,b,c){
+        //     console.log(a,b,c)
+        // }
+        // printAll(...fruits)
+
+
+            // Difference between operators
+        //     let fruits = ["apple","mango","papaya"]
+        // function printAll(...a){ // rest types
+        //     console.log(a)
+        // }
+        // printAll(...fruits) // spread types
+
+
+        // // Using multiple  Spread Oprator
+        // let fruits = ["apple","mango","papaya"]
+        // let  veg = ["rai","carrot","pumpkin"]
+
+        // let allmeteria=[...fruits,...veg];
+        // console.log(allmeteria)
+
+
+
+        //  // Using multiple with 2nd Spread Oprator example
+        //  let fruits = ["apple","mango","papaya"]
+        // let  veg = ["rai",...fruits,"carrot","pumpkin"]
+        // console.log(veg)
+
+
+        // Using multiple with 3rd Spread Oprator example
+        let fruits = ["apple","mango","papaya"]
+        let newFruits=fruits
+        newFruits.push("tester")
+        console.log(newFruits)
+        console.log("old",fruits)
+
+
+    </script>
+</body>
+</html>

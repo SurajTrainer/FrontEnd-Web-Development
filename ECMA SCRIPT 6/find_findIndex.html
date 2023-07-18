@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find and FindIndex</title>
+</head>
+<body>
+<h1>Find and FindIndex</h1>
+
+<script>
+    // let data = [10,29,30,50,80];
+    // let result = data.find(function(item){
+    //     return item>50;
+    // })
+    // console.log(result)
+
+
+    // let data = [10,29,30,50,80];
+    // let result = data.findIndex(function(item){
+    //     return item>50;
+    // })
+    // console.log(result)
+
+    //  let data = [10,29,30,50,80];
+    // let result = data.find((item)=> item<50 && item>29)
+    // console.log(result) 
+
+
+    //  let data = [10,29,30,50,80];
+    // function custom(item){
+    //     return item>50;
+    // }
+    // let result = data.find(custom)
+    // console.log(result) 
+
+    let data = [
+        {id:10, name:"a"},
+        {id:20, name:"b"},
+        {id:30, name:"c"},
+        {id:40, name:"d"},
+        {id:50, name:"e"},
+    ];
+   
+    let result = data.find(function(item){
+        return item.id>30;
+    })
+    console.log(result) 
+
+
+</script>
+</body>
+</html>

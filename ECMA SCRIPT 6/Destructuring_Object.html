@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Object</title>
+</head>
+<body>
+    <h1>Destructuring Object</h1>
+    <script>
+        let user = {name:"pankaj Singh", email:"pankaj@gmail.com",number:334546453}
+    //     let {email,number} = user;
+    //     console.log(email)
+    //     console.log(number)
+
+
+        // using with rest operator
+    // let {...name} = user;
+    //     console.log(name)
+
+
+    let {email,...name} = user;
+        console.log(name)
+        
+    </script>
+
+     </script>
+
+</body>
+</html>

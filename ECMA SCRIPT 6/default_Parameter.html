@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <h1>Default Parameter</h1>
+    <script>
+        //  function add(){
+        //     return 10+30;
+        // }
+        // console.log(add());
+
+
+
+        // function add(a,b){
+        //     return a+b;
+        // }
+        // console.log(add(12,20));
+        // console.log(add(20,50));
+        
+
+        // function add(a,b=20,c=40){
+        //     return a+b+c;
+        // }
+        // console.log(add(30));
+            
+//function in parameter
+        //     function someVal(){
+        //         return 100;
+        //     }
+        // function add(a,b=20,c=someVal()){
+        //     return a+b+c;
+        // }
+        // console.log(add(30));
+
+
+        // string using 
+        // function someVal(){
+        //         return "last";
+        //     }
+        // function add(a,b="middle",c=someVal()){
+        //     return a+" "+b+" "+c;
+        // }
+        // console.log(add("first"));
+
+        function main(a,b=main()){
+            return a+b;
+        }
+        console.log(main());
+    </script>
+</body>
+</html>
