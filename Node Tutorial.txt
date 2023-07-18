@@ -1,0 +1,83 @@
+(Node.js)  topic about send data on server  types
+
+
+const express = require("express")
+const app = express()
+
+app.get('/',(req,res)=>{
+    // res.send('hi this is first express route ')
+    res.send('<h1>this is the html tag using in js</h1> ')
+})
+app.get('/about',(req,res)=>{
+    res.send('hi about tag is entered on here')
+})
+app.get('/download',(req,res)=>{
+    // res.send('hi download our files ')
+    res.send({
+        name:"rakesh",
+        age:23,
+        address : "mumbai"
+    })
+})
+
+app.listen(3000,()=>{
+    console.log('server established');
+})
+
+
+
+(Node.js) reffering page on other page and download example 
+
+const express = require("express")
+const path = require('path');
+const app = express()
+
+
+const pathdir = path.join(__dirname,'public')
+app.use(express.static(pathdir))
+// it will alway's search first index file 
+
+
+app.get('/',(req,res)=>{
+    // res.send('hi this is first express route ')
+    // res.send('<h1>this is the html tag using in js</h1> ')
+    res.sendFile(`${pathdir}/index.html`)
+})
+app.get('/about',(req,res)=>{
+    // res.send('hi about tag is entered on here')
+    res.sendFile(`${pathdir}/home.html`)
+})
+// app.get('/download',(req,res)=>{
+//     // res.send('hi download our files ')
+//     // res.send({
+//     //     name:"rakesh",
+//     //     age:23,
+//     //     address : "mumbai"
+//     // })
+// })
+
+app.get('/download',(req,res) =>{
+    res.download(`${pathdir}/index.html`)
+})
+
+app.listen(3000,()=>{
+    console.log('server established');
+})
+
+
+(index.html) file for sending data
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        index file is this.
+    </h1>
+    <a href="/download">Downlad this file</a>
+</body>
+</html>
