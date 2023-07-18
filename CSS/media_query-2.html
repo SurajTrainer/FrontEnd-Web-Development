@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media query 2</title>
+	<style type="text/css">
+		*{
+			 box-sizing: border-box;
+		}
+		.header{
+			background-color: cyan;
+			color: orange;
+			padding: 15px;
+		}
+		.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 10px;
+		}
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+		}
+			.aside{
+			background-color: green;
+			padding: 15px;
+			color: blueviolet;
+			text-align: center;
+			font-size: 15px;
+		}
+		.menu li{
+			padding: 10px;
+			margin-bottom: 9px;
+			background-color: skyblue;
+			color: green;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+		}
+		.menu li:hover{
+			background-color: pink;
+		}
+		.row:after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+		[class*="col-"]{
+			float: left;
+			padding: 15px;
+		}
+		[class*="col-"]{
+			width: 100%;
+		}
+/*		for tablet*/
+		@media only screen and (min-width:600px){
+			.col-m-1 { width:8.33%; }
+			.col-m-2 { width:16.66%; }
+			.col-m-3 { width:25%; }
+			.col-m-4 { width:33.33%; }
+			.col-m-5 { width:41.66%; }
+			.col-m-6 { width:50%; }
+			.col-m-7 { width:58.33%; }
+			.col-m-8 { width:66.66%; }
+			.col-m-9 { width:75%; }
+			.col-m-10 { width:83.33%; }
+			.col-m-11 { width:91.66%; }
+			.col-m-12 { width:100%; }
+
+		}
+/*		for desktop*/
+		@media only screen and (min-width:768px ){
+			.col-m-1 { width:8.33%; }
+			.col-m-2 { width:16.66%; }
+			.col-m-3 { width:25%; }
+			.col-m-4 { width:33.33%; }
+			.col-m-5 { width:41.66%; }
+			.col-m-6 { width:50%; }
+			.col-m-7 { width:58.33%; }
+			.col-m-8 { width:66.66%; }
+			.col-m-9 { width:75%; }
+			.col-m-10 { width:83.33%; }
+			.col-m-11 { width:91.66%; }
+			.col-m-12 { width:100%; }			
+		}
+	
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<h1>This is surya..</h1>
+	</div>
+	<div class="row">
+		<div class=" col-3 col-m-3 menu">
+			<ul>
+				<li>C/C++</li>
+				<li>java</li>
+				<li>php</li>
+				<li>CSS</li>
+				<li>html</li>
+					<li>jquery.</li>
+
+			</ul>
+		</div>
+		<div class="col-12 col-m-12">
+			<h1>what about you..</h1>
+			<p>this is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to be asign and marked me on the ppoint so that.this is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to be asign and marked me on the ppoint so thatthis is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to</p>
+			
+		</div>
+		<div class="col-6 col-m-6">
+			<div class="aside">
+				<h2>this is surya</h2>
+				<p>this is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to be asign and marked me on the ppoint so that.this is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to be asign and marked me on the ppoint so thatthis is the way to go anywher e you want to go so yu can go on thtrr. iand i wan to </p>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>text transform,overflow and orientation</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			background: lightgoldenrodyellow;
+		}
+		div{
+			margin: 0 auto;
+			width: 20%;
+			border: 2px solid;
+		/*	white-space: nowrap;
+			overflow: hidden;*/
+		}
+		#lr{
+			writing-mode: vertical-lr;
+			text-orientation: mixed;
+		}
+		#rl{
+			writing-mode: vertical-rl;
+			text-orientation: upright;
+		}
+	</style>
+</head>
+<body>
+<h1>text transform</h1>
+	<p style="text-transform: capitalize;">this sis example for the capitalize transform</p><br>
+	<p style="text-transform: uppercase;">this sis example for the uppercase transform</p><br>
+	<p style="text-transform: lowercase;">THIS IS EXAMPLE FOR THE LOWER CASE TRANSFORM</p><br>
+	<p style="text-transform: none;">this is example for the none transform</p><br>
+	<p style="text-transform: initial;">this sis example for the initial transform</p><br>
+	<p style="text-transform: inherit;">this sis example for the inherit transform</p><br>
+
+<h1>text overflow</h1>
+	<div style="text-overflow: clip;">
+		this is the example for the clip overflow
+	</div><br>
+	<div style="text-overflow: ellipsis;">
+		this is the example for the ellipsis overflow
+	</div><br>
+
+<div style="text-overflow: string;">
+		this is the example for the string overflow
+	</div><br>
+
+
+
+<h1>text orientation</h1>
+<div id="lr">here are maxiun twi type s oreention avaia;bfffffffffffffffff ffffffffffffffffffff ddddddddddddd sssssssssssssss    </div>
+
+<div id="rl">here are maxiun twi type s oreention avaia;bfffffffffffffffff ffffffffffffffffffff ddddddddddddd sssssssssssssss    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>image css</title>
+	<style>
+		img{
+			width: 350px;
+			height: 200px;
+		}
+		#img-thumbnail{
+				border: 8px solid red;
+				border-radius: 8px;
+				padding: 10px;
+
+		}
+		#img-transperent{
+			border: 8px solid red;
+				border-radius: 8px;
+				padding: 10px;
+				opacity: 0.3;
+		}
+		#img-roundable1{
+			border-radius: 50px;
+		}
+		#img-roundable2{
+			border-radius: 50%;
+		}
+/*	the responsivle tag is useful to phone and tap and desktop and laptop .. for respnse any size as your size	*/
+		#img-responsive{
+			max-width: 100%;
+			height: auto;
+		}
+		#img-center{
+			margin-left: 0 auto;
+			margin-right: 0 auto;
+			
+		}
+
+	</style>
+</head>
+<body>
+
+<img id="img-thumbnail" src="dog.jpg">
+<img id="img-transperent" src="dog.jpg">
+<img id="img-roundable1" src="dog.jpg">
+<img id="img-roundable2" src="dog.jpg">
+<img id="img-responsive" src="dog.jpg">
+<img id="img-center" src="dog.jpg">
+
+
+</body>
+</html>

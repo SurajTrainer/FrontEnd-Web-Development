@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>after element</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		h1::after{
+			content: "Hlo everyone i am a learner" ;
+			color: red;
+
+		}
+		
+		h1{
+			color: blue;
+
+		}
+		#curvedarrow{
+			margin: 0 auto;
+			position: relative;
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-right: 10px solid darkred;
+			transform: rotate(10deg);
+
+
+		}
+		#curvedarrow::after{
+			content: "";
+			position: absolute;
+			border: 0 solid transparent;
+			border-top: 3px solid red;
+			border-radius: 20px 0 0;
+			top: -12px;
+			left: -9px;
+			width: 12px;
+			height: 9px;
+			transform: rotate(45deg);
+
+		}
+
+	</style>
+</head>
+<body>
+<h1>.this is an after pseudo element.</h1>
+<h2>This is example of after pseudo elements work</h2>
+<h3>here we are using the after element program</h3>
+<div id="curvedarrow"></div>
+
+</body>
+</html>

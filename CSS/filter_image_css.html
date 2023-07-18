@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>filter image</title>
+	<style type="text/css">
+.bright1 img{
+
+	width: 200px;
+	height: 200px;
+}
+#bright2{
+	filter: brightness(120%);
+}
+#blur{
+	filter: blur(4px);
+}
+#invert{
+	filter: invert(30%);
+}
+#shadow{
+	filter: drop-shadow(20px 30px 40px yellow);
+}
+#contrast{
+	filter: contrast(20%);
+}
+#opacity{
+	filter: opacity(40%);
+}
+#hue-rotate{
+	filter: hue-rotate(300deg);
+}
+#grayscale{
+	filter: grayscale(80%);
+}
+#sepia{
+	filter: sepia(80%);
+}
+		
+	</style>
+</head>
+<body>
+	<div class="bright1">
+		<h1>it is before the brightness</h1>
+		<img src="dog.jpg">
+
+		<h1>it is after the brightness</h1>
+		<img id="bright2" src="dog.jpg">
+
+		<h1>it is  the blur filter</h1>
+		<img id="blur" src="dog.jpg">
+
+		<h1>it is  the invert filter</h1>
+		<img id="invert" src="dog.jpg">
+
+		<h1>it is  the drop-shadow filter</h1>
+		<img id="shadow" src="dog.jpg">
+
+		<h1>it is  the contrast filter</h1>
+		<img id="contrast" src="dog.jpg">
+
+
+		<h1>it is  the opacity filter</h1>
+		<img id="opacity" src="dog.jpg">
+
+			<h1>it is  the hue-rotate filter</h1>
+		<img id="hue-rotate" src="dog.jpg">
+
+			<h1>it is  the grayscale filter</h1>
+		<img id="grayscale" src="dog.jpg">
+
+
+			<h1>it is  the sepia filter</h1>
+		<img id="sepia" src="dog.jpg">
+
+
+
+
+
+	</div>
+
+</body>
+</html>

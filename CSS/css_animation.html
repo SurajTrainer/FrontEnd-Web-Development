@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Animation</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#exp{
+			width: 100px;
+			height: 100px;
+			background: red;
+			-webkit-animation:myFirst 5s;
+			animation: myFirst 5s;
+			animation-iteration-count: infinite;
+/*			  animation-iteration-count: infinite; is used for continue going..*/
+
+		}
+		@keyframes myFirst{
+			from{background: red;
+			}
+			to{ background-color:black; }
+		}
+		#exp1{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background: red;
+			-webkit-animation:myRectangle 5s;
+			animation: myRectangle 5s;
+			animation-iteration-count: infinite;
+/*			  animation-iteration-count: infinite; is used for continue going..*/
+		}
+		@keyframes myRectangle{
+			0% { background:red; left:0px; top:0px; }
+			25% { background:yellow; left:300px; top:0px; }
+			50% { background:blue; left:0px; top:200px; }
+			75% { background:green; left:0px; top:300px; }
+			100% { background:red; left:0px; top:0px; }
+
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>css animation</h1>
+
+<div id="exp"></div><br><br><hr>
+
+<h1>css animation</h1>
+
+<div id="exp1"></div>
+
+
+
+</body>
+</html>

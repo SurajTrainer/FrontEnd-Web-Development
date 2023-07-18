@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>visibility </title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		div{
+			margin: 0 auto;
+			width: 300px;
+			background: cyan;
+			
+			font-size: 28px;
+			padding: 10px;
+		}
+		
+	</style>
+h
+</head>
+<body>
+   	
+   	<button onclick="myFunction()"> hide and show</button>  <br><br>
+
+	<div id="showw">this is division for hide and show..</div>
+
+
+
+	
+
+</body>
+<script type="text/javascript">
+	function myFunction() {
+
+	if (document.getElementById("showw").style.visibility == "visible") {
+		document.getElementById("showw").style.visibility = "hidden";
+	}
+	else{
+		document.getElementById("showw").style.visibility = "visible";
+	}
+}
+</script>
+</html>

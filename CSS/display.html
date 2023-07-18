@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>display property</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			background-color: yellow;
+		}
+		span{
+			background-color: cyan;
+		}
+		a{
+			background-color: skyblue;
+		}
+		ul{
+				list-style-type: none;
+		}
+		#in li{
+			display: inline;
+		}
+		#bl li{
+
+			display: inline-block;
+		}
+#blo span{
+	display: block;
+}
+.flex{
+	
+	display: flex;
+	
+}
+
+.flex div{
+	padding: 20px;
+	text-align: center;
+	background: pink;
+	border: 20px lightgreen;
+	color: whitesmoke;
+	display: inline;
+}
+
+
+	</style>
+
+</head>
+<body>
+
+<h1>this is an example of display..</h1>
+<span>this is a span</span>
+<a href=""> this is a link tad..</a>
+
+<!-- this is the example of inline-block peroperty... -->
+<h1>weeks day </h1>
+<ul id="in">
+	<li>Sunday</li>
+	<li>Monday</li>
+	<li>Tuesday</li>
+	<li>WEdnesday</li>
+	<li>Thusrday</li>
+	<li>Friday</li>
+	<li>Saturday</li>
+</ul>
+
+
+<!-- this is the example of inline-block peroperty... -->
+<h1>weeks day </h1>
+<ul id="bl">
+	<li>Sunday</li>
+	<li>Monday</li>
+	<li>Tuesday</li>
+	<li>WEdnesday</li>
+	<li>Thusrday</li>
+	<li>Friday</li>
+	<li>Saturday</li>
+	<li>Sunday</li>
+	<li>Monday</li>
+	<li>Tuesday</li>
+	<li>WEdnesday</li>
+	<li>Thusrday</li>
+	<li>Friday</li>
+	<li>Saturday</li><li>Sunday</li>
+	<li>Monday</li>
+	<li>Tuesday</li>
+	<li>WEdnesday</li>
+	<li>Thusrday</li>
+	<li>Friday</li>
+	<li>Saturday</li>
+
+</ul>
+
+<!-- this is the example of block peroperty... -->
+<div id="blo">
+<span>Sunday</span>
+	<span>Monday</span>
+	<span>Tuesday</span>
+	<span>WEdnesday</span>
+	<span>Thusrday</span>
+	<span>Friday</span>
+	<span>Saturday</span>
+</div><br><br>
+
+<!-- this is the example of none peroperty... -->
+<div>this is a visible</div>
+<div style="display:none;">this is a unvisible...</div>
+
+
+<!-- this is the example of flex peroperty... -->
+<div class="flex">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>transition delay</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#exp1{margin-left: 300px;
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			transition-property: background;
+			transition-duration: 1s;
+/*			transition-delay: -5s;*/
+			transition-delay: 0.5s;
+		}
+			#exp1:hover{
+				background: hotpink;
+			}
+			#exp2{
+				padding: 15px;
+				margin-left: 300px;
+			width: 100px;
+			height: 100px;
+			background: lightgreen;
+			transition-property: width;
+			transition-delay: initial;
+
+			}
+			#exp2:hover{
+				width: 400px;
+			}
+			#exp3{
+				text-align: left;
+				padding: 15px;
+				margin-left: 300px;
+			width: 100px;
+			height: 100px;
+			background: lightpink;
+			transition: background-color 1s,height 2s,transform 1s;
+			transition-delay: 1ms;
+
+			}
+			#exp3:hover{
+
+					width: 500px;
+					height: 300px;
+					background: orange;
+					transform: rotate(360deg);
+			}
+
+	</style>
+</head>
+<body>
+	
+	<h1>transition-delay</h1>
+	<h2>ex.1 change the color of the div on the hover</h2>
+	<div id="exp1"></div><br><br><hr>
+
+
+<h1>transition-delay</h1>
+<h2>change the width of div on hover</h2>
+	<div id="exp2"></div><br><br><hr>
+
+
+<h1>transition-delay</h1>
+<h2>rotate the div on :hover</h2>
+	<div id="exp3">1</div><br><br><hr>	
+
+</body>
+</html>

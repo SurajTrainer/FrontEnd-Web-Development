@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css transform & Resize</title>
+	<style>
+		
+		div{
+			font-size: 30px;
+			width: 500px;
+			height: 100px;
+			background: lightgoldenrodyellow;
+			margin: 40px;
+			border: 3px solid red;
+			
+		}
+		#exp1{
+			transform: rotate(35deg);
+			transform-origin: 20% 2%;
+		}
+		#exp2{
+			transform: rotate3d(3, 2, 5, 75deg);
+			transform-origin: 70% 12% 150px;
+		}
+		div{
+/*			it is for the css resize property..*/
+/*			resize: horizontal;*/
+			resize: both;
+			overflow: auto;
+		}
+	
+	</style>
+</head>
+<body>
+	<div>transform-origin original</div>
+	<div id="exp1">for 2d transforms <br>transform: rotate(35deg);<br>transform-origin: 5% 3%;</div><br><br><br><br><br><br><hr>
+
+
+	<div>transform-origin original</div>
+	<div id="exp2">for 3d transforms <br>transform: rotate3d(35deg);<br>transform-origin: 70% 10% 150px;</div><br><br><hr>
+
+
+		
+
+<div>
+		CSS Resizerty
+		 that su theh id sith te,ar side fti  rwason we aew goind in there so be aware about that what actually going here ..
+	</div>
+
+
+
+
+</body>
+</html>

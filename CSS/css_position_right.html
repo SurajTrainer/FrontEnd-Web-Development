@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>position  right </title>
+
+	<style type="text/css">
+		div{
+/*			position: absolute;*/
+		position: relative;
+			width: 150px;
+			height: 200px;
+			font-size: 22px;
+		}
+		.len{
+			border: 3px solid green;
+			right: -200px;
+		}
+		.per{
+			border: 4px solid red;
+			right: -60%;
+		}
+		.auto{
+			border: 6px solid green;
+			right: auto;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+<div class="len">it is right 250px</div>
+
+<div class="per">it is right 60%</div>
+
+<div class="auto">it is right auto</div>
+
+</body>
+</html>

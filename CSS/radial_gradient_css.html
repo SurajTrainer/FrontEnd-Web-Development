@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>radiel gradient</title>
+	<style type="text/css">
+		.div1 p{
+			margin: 0 auto;
+			width: 300px;
+			height: 200px;
+			font-size: 28px;
+			border: 3px solid blue;
+		}
+		#radi{
+			background: -webkit-radial-gradient(blue,green,red);
+		}
+		#radi1{
+			background: -o-radial-gradient(blue,green,red);
+		}
+		#radi2{
+			background: -moz-radial-gradient(blue,green,red);
+		}
+		#radi3{
+			background: radial-gradient(blue,green,red);
+		}
+
+
+				#stop{
+			background: -webkit-radial-gradient(blue 5%, green 15%, red 60%);
+		}
+		#stop1{
+			background: -o-radial-gradient(blue 5%, green 15%, red 60%);
+		}
+		#stop2{
+			background: -moz-radial-gradient(blue 5%, green 15%, red 60%);
+		}
+		#stop3{
+			background: radial-gradient(blue 5%, green 15%, red 60%);
+		}
+		#corner{
+			background-image: radial-gradient(farthest-side at left bottom, red, yellow, cyan);
+		}
+		#corner1{
+			background-image: radial-gradient(farthest-side at right bottom, blue, yellow, cyan);
+		}
+		#corner2{
+			background-image: radial-gradient(closest-side, red, yellow, lightgreen);
+		}
+		#corner3{
+			background-image: radial-gradient(closest-side, blue, yellow, cyan);
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+
+	<div class="div1">
+		<h2>radiel gradient</h2>
+		<p id="radi"></p>
+		<h2>radiel gradient</h2>
+		<p id="radi1"></p>
+		<h2>radiel gradient</h2>
+		<p id="radi2"></p>
+		<h2>radiel gradient</h2>
+		<p id="radi3"></p>
+
+
+
+			<h2>dfference spaced color stop gradient</h2>
+		<p id="stop"></p>
+		<h2>dfference spaced color stop gradient</h2>
+		<p id="stop1"></p>
+		<h2>dfference spaced color stop gradient</h2>
+		<p id="stop2"></p>
+		<h2>dfference spaced color stop gradient</h2>
+		<p id="stop3"></p>
+
+
+			<h2>from corner gradient</h2>
+		<p id="corner"></p>
+		<h2>from corner gradient</h2>
+		<p id="corner1"></p>
+		<h2>from corner gradient</h2>
+		<p id="corner2"></p>
+		<h2>from corner gradient</h2>
+		<p id="corner3"></p>
+
+	</div>
+
+</body>
+</html>
