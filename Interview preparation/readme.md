@@ -65,3 +65,104 @@ Q-9 - Explain the use of the <a> tag?
 Ans . '<a>' tags  creates hyperlinks for web navigation.
         Utilizes the 'href' attribute to define the destination URL.
         Fundamental for establishing interconnectivity across the web.
+
+
+
+
+
+        
+<!-- 2nd day part -->
+
+Q.10 - What is HTML form, and how do you create one?
+Ans . HTML form : collect data from user.
+        <form> elements is used to create a form.
+        Input fields : Text boxes, radio button, checkboxes, buttons.
+        Purpose : Submit form data to a server for processing.
+
+
+Q.11 - What is HTML entity?
+Ans . HTML entity are special codes in HTML..
+        Purpose : Display reserved characters and symbols.
+        Example : &lt; for '<' and &amp; for '&'.
+        Importance : Essential for  rendering special HTML characters.
+
+
+Q-12 - What is <meta> tag ?
+Ans .   '<meta>' tag is used for webpage metadata.
+            Common attributes : charset, name and content.
+            Placed inside the '<head>' section.
+
+
+Q.13 - What is the difference between <div> and <span> elements?
+Ans .  <div> : Block level container , groups and style larger content sections, distnict block level layout.
+        <span> : Inline element , styles or scripts smaller text portions within a block-level elements.
+
+
+Q.14 - How can you add comments in HTML?
+Ans . HTML comments use <!--and--> delimiters.
+        Content within these delimiters is treated as comments and remains hidden on the webpage.
+        Comment serve purpose like adding notes, explainations , or documnetation in HTML code.
+
+
+Q.15 - What is the purpose of the <img> tag?
+Ans .  '<img>' tags displays images on webpages.
+         'src' attribute specifies the image source.
+         Use 'alt' for alternative text.
+         Specify 'width' and 'height' for dimention and layout control.
+
+
+Q.16 - What is the importance of validation in HTML?
+Ans . HTML validation ensures adherence to correct syntax and structure  per HTML specifications.
+        Valid HTML boosts compatibility across web browsers and devices.
+        Improve accessibility , user experience , and search engine raking.
+
+
+Q.17 - What is the differce between GET and POST requests?
+Ans . GET requests : 
+                Used to obtain information from a server.
+                The data is sent in the request's URL.
+                Used to retrive static data , like a web pages or an image.
+      POST requests :
+                Used to communicate with a server.
+                The data is sent in the request's body.
+                Used to submit forms, like login or contact forms.
+
+
+
+*CSS
+Q.1 - What is CSS , and what is its primary purpose?
+Ans . CSS stands for Cascading Style Sheets.
+        Defines web page presentation and layout.
+        Controls fonts , colors, spacing and positioning on a webside.
+
+
+Q.2 - Explain the difference between inline, internal , and external CSS?
+Ans . Inline CSS : Applied directly to individual HTML elements using the  'style' attribute.
+      Internal CSS : Defined within the HTML document's <style> tag in the <head> section.
+      External CSS : Stored in the seperate .css file and linked to HTML using the <link> tag. 
+    prefered method for style reusablity : External CSS; especially useful for maintaing consistent styles across multiple pages.     
+
+
+Q.3 - What is the  CSS box model , and how does it works?
+Ans . It describes how HTML components are displayed on screen.
+        It specifies how an element's content, padding, border, and margin are set.
+        width = content + width + padding + border
+
+
+Q.4 - How do you center an element horizontally and vertically in CSS?
+Ans . Horizontal centering : Employ "margin : 0 auto" , on a block level element with a defined width.
+        Both Horizontal and Vertical centering : Utilize flexbox with "display : flex;
+        justify-content:center; align-items:center;".
+
+Q.5 - Explain the difference between display: block, display : inline, and display : inline-block?
+Ans . display:block - Elements becomes a block level elements , takes full width of the parent, stacks vertically.
+        display:inline - Element become inline-level, takes minimal width, stack horizantly.
+        display : inline-block - Combination of inline and block, behaves likes inline but has block-level properties and dimentions.
+
+Q.6 -  How does CSS specificity work, and how is it calculated?
+Ans . CSS specificity dictates style precedence in conflicts.
+        It's determined by the count of IDs , class, and elements in the selector.
+        Higher Specify wins - for instance , an Id selector beats a class selector.
+        Inline styles are the most specific.
+
+        
