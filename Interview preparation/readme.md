@@ -1,4 +1,4 @@
-//  HTML/ MARKUP
+//  HTML / MARKUP
 
 frontend interview preparation . 
 
