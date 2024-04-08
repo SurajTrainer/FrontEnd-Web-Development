@@ -157,22 +157,26 @@ Ans . Inline CSS : Applied directly to individual HTML elements using the  'styl
 
 
 Q.3 - What is the  CSS box model , and how does it works?
+
 Ans . It describes how HTML components are displayed on screen.
         It specifies how an element's content, padding, border, and margin are set.
         width = content + width + padding + border
 
 
 Q.4 - How do you center an element horizontally and vertically in CSS?
+
 Ans . Horizontal centering : Employ "margin : 0 auto" , on a block level element with a defined width.
         Both Horizontal and Vertical centering : Utilize flexbox with "display : flex;
         justify-content:center; align-items:center;".
 
 Q.5 - Explain the difference between display: block, display : inline, and display : inline-block?
+
 Ans . display:block - Elements becomes a block level elements , takes full width of the parent, stacks vertically.
         display:inline - Element become inline-level, takes minimal width, stack horizantly.
         display : inline-block - Combination of inline and block, behaves likes inline but has block-level properties and dimentions.
 
 Q.6 -  How does CSS specificity work, and how is it calculated?
+
 Ans . CSS specificity dictates style precedence in conflicts.
         It's determined by the count of IDs , class, and elements in the selector.
         Higher Specify wins - for instance , an Id selector beats a class selector.
@@ -184,28 +188,33 @@ Ans . CSS specificity dictates style precedence in conflicts.
 // Third day 
 
 Q.7 - What is the box-sizing property , and how does it affect  layout?
+
 Ans . Box-sizing property defines width and height calculations for width.
         Content-Box includes only the content in calculations.
         Border-Box includes padding and border in width and height calculations.
 
 
 Q.8 - How can you create a responsive design in CSS?
+
 Ans. Responsive design : Utilize media quaries for style adjustment based on screen width.
         Relatives Units : Employ percentages and rem to ensure element adaptability to varying screen sizes.
         Flexible layouts : Leverage Flexbox and CSS grid for versatile layout design.
 
 Q.9 - What are pseudo-classes and pseduo-elements in CSS?
+
 Ans . Pseudo-class define special states of elements (eg. :hover for mouse hover).
         Pseudo-elements styles special parts of elements (eg : ::before or ::after for adding content).
 
 
 Q.10 - Explain the CSS float property and its uses?
+
 Ans . Float property for element alignment (left or right).
         Typical uses : Text wrapping around images and multi-column layouts.
         Outdated method : flexbox and grid layouts preffered for complex design.
 
 
 Q.11 - How do you achive cross-browser compatibility with CSS?
+
 Ans . Employ vender prefixes for CSS properties when required.
         Throughly test the webside across various browsers and versions.
         Utilize feature detection libraries like Modernizr to gracefully handle unsupported  CSS features. 
@@ -216,12 +225,14 @@ Ans . Employ vender prefixes for CSS properties when required.
         // Fourth Day / part
 
 Q.12 - Describe the z-index property and how it affects stacking order?
+
 Ans . Z-index property controls stacking order.
         Higher value places element in front.
         Key for visual hierachy in complex layouts.
 
 
 Q.13 -  What is the CSS position property , and what are its use?
+
 Ans .  Position property determines an element's positioning method .
         Values :
         static (default) : Element follow normal flow.
@@ -232,19 +243,22 @@ Ans .  Position property determines an element's positioning method .
 
 
 Q.14 - Explian the concept of a CSS sprite and its benifits? 
+
 Ans . CSS sprite ia a single image with multiple images/icons.
         Purpose : Reduce HTTP requests, enhancing webside perfomance.
         Technique : Display specific part of the sprite using CSS  background-position.
         Benifits : Bandwidth saving , faster image laoding.
 
 
-Q.15 - What is the "Cascading" in Cascading style sheet? 
+Q.15 - What is the "Cascading" in Cascading style sheet?
+
 Ans . "Cascading" in CSS refers to the priority order for conflicting rules.
         CSS hierarchy : inline , internal, external , and user-defined styles.
         This hierarchy defines style precedence for flexibility and specificity.
 
 
 Q.16 - What is the difference between a Class  and an Id?
+
 Ans . CLASS : 
         Can be applied to several components.
         used to group  together related items.
@@ -259,6 +273,7 @@ Ans . CLASS :
 
 // 4th day 2nd device
 Q.17 - How do you create a responsive layout?
+
 Ans . CSS media quearies are used to create responsive layouts.
         It allows to alter the appearance of a webside based on screen size of device.
         Media quaries can be used to adjust font size , element width , and element visibility.
@@ -269,6 +284,7 @@ Ans . CSS media quearies are used to create responsive layouts.
         // JAVASCRIPT/JS
 
 Q.1 - What is javascript , and how is it different from java?
+
 Ans . javascript is high-level, interpreted scripting language.
         It is used for web development.
       Difference : 
@@ -278,6 +294,7 @@ Ans . javascript is high-level, interpreted scripting language.
 
 
 Q.2 - Explian the difference between null and undefined in javascript?
+
 Ans .   Null : intentional of a absence of object value , often assigned by developer.
         Undefined : Variable declared but  not assigned a value.
 
