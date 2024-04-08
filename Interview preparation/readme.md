@@ -131,7 +131,8 @@ Ans . GET requests :
 
 
 
-*CSS
+
+// CSS (CASCADING STYLES SHEET)
 Q.1 - What is CSS , and what is its primary purpose?
 Ans . CSS stands for Cascading Style Sheets.
         Defines web page presentation and layout.
@@ -168,6 +169,36 @@ Ans . CSS specificity dictates style precedence in conflicts.
         Inline styles are the most specific.
 
 
+        
+
+// Third day 
+
+Q.7 - What is the box-sizing property , and how does it affect  layout?
+Ans . Box-sizing property defines width and height calculations for width.
+        Content-Box includes only the content in calculations.
+        Border-Box includes padding and border in width and height calculations.
+
+
+Q.8 - How can you create a responsive design in CSS?
+Ans. Responsive design : Utilize media quaries for style adjustment based on screen width.
+        Relatives Units : Employ percentages and rem to ensure element adaptability to varying screen sizes.
+        Flexible layouts : Leverage Flexbox and CSS grid for versatile layout design.
+
+Q.9 - What are pseudo-classes and pseduo-elements in CSS?
+Ans . Pseudo-class define special states of elements (eg. :hover for mouse hover).
+        Pseudo-elements styles special parts of elements (eg : ::before or ::after for adding content).
+
+
+Q.10 - Explain the CSS float property and its uses?
+Ans . Float property for element alignment (left or right).
+        Typical uses : Text wrapping around images and multi-column layouts.
+        Outdated method : flexbox and grid layouts preffered for complex design.
+
+
+Q.11 - How do you achive cross-browser compatibility with CSS?
+Ans . Employ vender prefixes for CSS properties when required.
+        Throughly test the webside across various browsers and versions.
+        Utilize feature detection libraries like Modernizr to gracefully handle unsupported  CSS features. 
 
 
 
@@ -216,5 +247,28 @@ Ans . CLASS :
 
 
 
+// 4th day 2nd device
+Q.17 - How do you create a responsive layout?
+Ans . CSS media quearies are used to create responsive layouts.
+        It allows to alter the appearance of a webside based on screen size of device.
+        Media quaries can be used to adjust font size , element width , and element visibility.
 
-        
+
+
+
+        // JAVASCRIPT
+
+Q.1 - What is javascript , and how is it different from java?
+Ans . javascript is high-level, interpreted scripting language.
+        It is used for web development.
+      Difference : 
+      Client-side vs . general purpose.
+      Dynamically typed vs statically typed.
+      Browser vs virtual machine environment.
+
+
+Q.2 - Explian the difference between null and undefined in javascript?
+Ans .   Null : intentional of a absence of object value , often assigned by developer.
+        Undefined : Variable declared but  not assigned a value.
+
+
