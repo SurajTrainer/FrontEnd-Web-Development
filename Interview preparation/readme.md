@@ -71,6 +71,7 @@ Ans . '<a>' tags  creates hyperlinks for web navigation.
 
 
 
+        // JAVASCRIPT/JS
 
         
 <!-- 2nd day part -->
