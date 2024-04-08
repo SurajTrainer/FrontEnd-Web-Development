@@ -1,4 +1,4 @@
-// HTML / (HYPHER TEXT MARKUP LANGUAGE)
+// HTML / HYPHER TEXT MARKUP LANGUAGE
 
 frontend interview preparation . 
 
@@ -131,7 +131,7 @@ Ans . GET requests :
 
 
 
-// CSS/ (CASCADING STYLES SHEET)
+// CSS/ CASCADING STYLES SHEET
 Q.1 - What is CSS , and what is its primary purpose?
 Ans . CSS stands for Cascading Style Sheets.
         Defines web page presentation and layout.
