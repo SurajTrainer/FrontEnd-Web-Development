@@ -1,4 +1,4 @@
-// HTML (HYPHER TEXT MARKUP LANGUAGE)
+// HTML/ (HYPHER TEXT MARKUP LANGUAGE)
 
 frontend interview preparation . 
 
@@ -71,8 +71,6 @@ Ans . '<a>' tags  creates hyperlinks for web navigation.
 
 
 
-        // JAVASCRIPT/JS
-
         
 <!-- 2nd day part -->
 
@@ -133,7 +131,7 @@ Ans . GET requests :
 
 
 
-// CSS (CASCADING STYLES SHEET)
+// CSS/ (CASCADING STYLES SHEET)
 Q.1 - What is CSS , and what is its primary purpose?
 Ans . CSS stands for Cascading Style Sheets.
         Defines web page presentation and layout.
@@ -257,7 +255,7 @@ Ans . CSS media quearies are used to create responsive layouts.
 
 
 
-        // JAVASCRIPT
+        // JAVASCRIPT/JS
 
 Q.1 - What is javascript , and how is it different from java?
 Ans . javascript is high-level, interpreted scripting language.
