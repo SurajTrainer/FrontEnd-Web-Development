@@ -75,6 +75,7 @@ Ans . '<a>' tags  creates hyperlinks for web navigation.
 <!-- 2nd day part -->
 
 Q.10 - What is HTML form, and how do you create one?
+
 Ans . HTML form : collect data from user.
         <form> elements is used to create a form.
         Input fields : Text boxes, radio button, checkboxes, buttons.
@@ -82,6 +83,7 @@ Ans . HTML form : collect data from user.
 
 
 Q.11 - What is HTML entity?
+
 Ans . HTML entity are special codes in HTML..
         Purpose : Display reserved characters and symbols.
         Example : &lt; for '<' and &amp; for '&'.
@@ -89,23 +91,27 @@ Ans . HTML entity are special codes in HTML..
 
 
 Q-12 - What is <meta> tag ?
+
 Ans .   '<meta>' tag is used for webpage metadata.
             Common attributes : charset, name and content.
             Placed inside the '<head>' section.
 
 
 Q.13 - What is the difference between <div> and <span> elements?
+
 Ans .  <div> : Block level container , groups and style larger content sections, distnict block level layout.
         <span> : Inline element , styles or scripts smaller text portions within a block-level elements.
 
 
 Q.14 - How can you add comments in HTML?
+
 Ans . HTML comments use <!--and--> delimiters.
         Content within these delimiters is treated as comments and remains hidden on the webpage.
         Comment serve purpose like adding notes, explainations , or documnetation in HTML code.
 
 
 Q.15 - What is the purpose of the <img> tag?
+
 Ans .  '<img>' tags displays images on webpages.
          'src' attribute specifies the image source.
          Use 'alt' for alternative text.
@@ -113,12 +119,14 @@ Ans .  '<img>' tags displays images on webpages.
 
 
 Q.16 - What is the importance of validation in HTML?
+
 Ans . HTML validation ensures adherence to correct syntax and structure  per HTML specifications.
         Valid HTML boosts compatibility across web browsers and devices.
         Improve accessibility , user experience , and search engine raking.
 
 
 Q.17 - What is the differce between GET and POST requests?
+
 Ans . GET requests : 
                 Used to obtain information from a server.
                 The data is sent in the request's URL.
@@ -132,13 +140,16 @@ Ans . GET requests :
 
 
 //  CASCADING STYLES SHEET / CSS
+
 Q.1 - What is CSS , and what is its primary purpose?
+
 Ans . CSS stands for Cascading Style Sheets.
         Defines web page presentation and layout.
         Controls fonts , colors, spacing and positioning on a webside.
 
 
 Q.2 - Explain the difference between inline, internal , and external CSS?
+
 Ans . Inline CSS : Applied directly to individual HTML elements using the  'style' attribute.
       Internal CSS : Defined within the HTML document's <style> tag in the <head> section.
       External CSS : Stored in the seperate .css file and linked to HTML using the <link> tag. 
