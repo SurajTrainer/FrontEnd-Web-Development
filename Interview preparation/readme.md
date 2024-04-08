@@ -165,4 +165,54 @@ Ans . CSS specificity dictates style precedence in conflicts.
         Higher Specify wins - for instance , an Id selector beats a class selector.
         Inline styles are the most specific.
 
+
+
+
+
+
+        // Fourth Day / part
+
+Q.12 - Describe the z-index property and how it affects stacking order?
+Ans . Z-index property controls stacking order.
+        Higher value places element in front.
+        Key for visual hierachy in complex layouts.
+
+
+Q.13 -  What is the CSS position property , and what are its use?
+Ans .  Position property determines an element's positioning method .
+        Values :
+        static (default) : Element follow normal flow.
+        relative : Positioned relative to normal position.
+        absolute : Positioned relative to nearest positioned ancestor.
+        fixed : positive relative to viewport.
+        sticky : Positioned based on user's scroll position.
+
+
+Q.14 - Explian the concept of a CSS sprite and its benifits? 
+Ans . CSS sprite ia a single image with multiple images/icons.
+        Purpose : Reduce HTTP requests, enhancing webside perfomance.
+        Technique : Display specific part of the sprite using CSS  background-position.
+        Benifits : Bandwidth saving , faster image laoding.
+
+
+Q.15 - What is the "Cascading" in Cascading style sheet? 
+Ans . "Cascading" in CSS refers to the priority order for conflicting rules.
+        CSS hierarchy : inline , internal, external , and user-defined styles.
+        This hierarchy defines style precedence for flexibility and specificity.
+
+
+Q.16 - What is the difference between a Class  and an Id?
+Ans . CLASS : 
+        Can be applied to several components.
+        used to group  together related items.
+        Example : Styles all heading of the header.
+      ID :
+        Can be applied to one element only.
+        used to  identify a certain elements.
+        Example : Customizing main navigation bar of web page.
+
+
+
+
+
         
