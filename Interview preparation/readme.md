@@ -299,3 +299,51 @@ Ans .   Null : intentional of a absence of object value , often assigned by deve
         Undefined : Variable declared but  not assigned a value.
 
 
+
+        
+Q.3 - What is the differnce between let , const and var for variable declaration in javascript?
+
+Ans . var : Function Scoped , can be redeclared.
+      let : Block scope, can be reassigned.
+      const : Block-scoped , constant , can not be reassigned.
+
+
+
+
+Q.10 - How does the prototypal inheritance work in javascript?
+
+Ans . Objects inherit properties and methods via their prototype chain.
+        Each object possesses a prototype.
+        When a property or method is absent on an object, javascript searches for it in the prototype chain.
+
+Q.11 - How can you handle asynchronus operations in javascript?
+
+Ans . Asynchronus operations can be managed through callbacks, Promises , or async/await.
+        Callbacks are functions passed as arguments and execute when async operations finish.
+        Promises offer structured handling of asynchronus code.
+        Async/Await provides a modern , synchronous-style approach to asynchronus code.
+
+
+Q.12 -  Explain the concept of 'this' in javascript?
+
+Ans . 'this' refer to the current context or object in which a function is executed.
+        In a method , 'this' refers to the object it's called on .
+        in a regular function , 'this' refers to the global object (window in browser).
+        Arrow function maintain the 'this' value of their surrounding lexical context.
+
+
+Q.13 - What are promises in JS?
+
+Ans . Promises are objects for value representation.
+        Temporal flexibility : can represent current , future , or no value.
+        Simplify asynchronus code.
+        Structured handling of success and error.
+
+Q.14 - Describe the 'callback hell' problem in javascript and how it can be mitigated?
+
+Ans . 'Callback hell' or 'pyramid of doom' : occures due to nested callbacks , making code hard to read.
+        Mitigation :    use promises or async/await to flatten callbacks, improving code readability and manageability.
+
+
+
+
