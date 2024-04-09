@@ -310,6 +310,56 @@ Ans . var : Function Scoped , can be redeclared.
 
 
 
+// fifth day 
+
+Q.4 - What are the different data types in javascript?
+
+Ans . There are seven data types in javascript.
+        Number : A number can be any integer or floating-point value.
+        String : A string is a sequance of characters.
+        Boolean : A boolean can be either true or not.
+        Null : The null value is special value that represents the absense of a value.
+        Undefined : The undefined value is special value that represents a value that has not yet been assigned.
+        Symbol : A symbol is a unique value that can be used to identify an object.
+        BigInt : A BigInt is an integer that is too large to be represented by a regular javascript number.
+
+
+
+Q.5 - What are the events in javascript?
+
+Ans .  Javascript events are triggered by user interactions or changes in the browser's state.
+         Events are reported to javascript as event objects containing event-specific information.
+         The addEventListner() function is used to listen for events.
+         It takes two arguments : the event type and a function to execute when the event occurs. 
+
+Q.6 - What is the differnce between '==' and '===' operators in js?
+
+Ans .   '==' checks for equality with type coercion, allowing type conversion for comparision (eg. 5 == '5' is true).
+        '===' checks for the strict equalty without type coercion , requiring ,  both value and type to be the same for a true comparition. 
+
+
+Q.7 - What is hoisting in javascript?
+
+Ans . Hoisting in javascript involves moving variable and function declarations to the top of their containing scope during compilation.
+        Variable hoisting : invloves declaring variable with var , which are hoisted to the top of their scope.
+        Function Hoisting : entails hoisting entire function declarations to the top of their containing scope.
+
+Q.8 - Explain the closures in javascript?
+
+Ans . Closures allow functions to access and remember variable and function from their outer scope.
+        Allows percistent Access.
+        Ensures the data privacy.
+        Helps creating modular code.
+
+
+Q.9 - What is the event loop in javascript?
+
+Ans . Events loop ia a mechanism enabling non-blocking opearations in javascript.
+        Manages code execution.
+        Ensures asynchronos code (eg , callback , promises) runs when the main thread is idle.
+
+
+
 Q.10 - How does the prototypal inheritance work in javascript?
 
 Ans . Objects inherit properties and methods via their prototype chain.
