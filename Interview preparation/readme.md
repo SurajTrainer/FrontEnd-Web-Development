@@ -397,3 +397,26 @@ Ans . 'Callback hell' or 'pyramid of doom' : occures due to nested callbacks , m
 
 
 
+
+
+
+//sixth day
+
+                        // React js
+Q.1 - What is React js, and how does it differ from other javascript frameworks?
+
+Ans . React is a javascript library for UI.
+        Not a full framework like Angular.
+        Focuses on UI layer, maximizing flexibility.
+        Utilizes a virtual dom for optimized updates.
+        Enhances application efficiency.
+
+Q.2 - Explain the concept of virtual DOM?
+
+Ans . The Virtual DOM is a lightweight copy of the real DOM, enabling React to make efficient updates.
+        It compares the two and applies only necessary changes, reducing re-render for improved perfomance.
+
+Q.3 -  What are the key features of React ?
+
+Ans - React's key features : Virtual DOM, component-based architecture, one way data binding, reusability.
+      Strong ecosystem: Tools like React Router  and Redux for state management. 
