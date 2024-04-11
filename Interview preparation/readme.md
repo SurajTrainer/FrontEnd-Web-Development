@@ -420,3 +420,16 @@ Q.3 -  What are the key features of React ?
 
 Ans - React's key features : Virtual DOM, component-based architecture, one way data binding, reusability.
       Strong ecosystem: Tools like React Router  and Redux for state management. 
+
+
+
+
+
+// 7th day
+
+Q.4 - What is JSX in React, and how is it different from HTML?
+Ans . JSX(javascript XML) extends javascript for HTML-like code in your javascript file.
+        Transpiled into regular javascript using tools like Babel.
+        Enables embedding of javascript expressions within markup for dynamism.
+
+        
