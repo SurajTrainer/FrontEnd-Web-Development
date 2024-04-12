@@ -403,6 +403,7 @@ Ans . 'Callback hell' or 'pyramid of doom' : occures due to nested callbacks , m
 //sixth day
 
                         // React js
+                        
 Q.1 - What is React js, and how does it differ from other javascript frameworks?
 
 Ans . React is a javascript library for UI.
@@ -423,8 +424,6 @@ Ans - React's key features : Virtual DOM, component-based architecture, one way 
 
 
 
-
-
 // 7th day
 
 Q.4 - What is JSX in React, and how is it different from HTML?
@@ -432,5 +431,26 @@ Q.4 - What is JSX in React, and how is it different from HTML?
 Ans . JSX(javascript XML) extends javascript for HTML-like code in your javascript file.
         Transpiled into regular javascript using tools like Babel.
         Enables embedding of javascript expressions within markup for dynamism.
+
+
+
+        // 8th day
+
+Q.5 - Explain the component lifecycle phase:
+
+Ans . React component have distinict lifecycle phase :
+        Mounting : includes the constructor , render , and componentDidMount.
+        Updating : involves shouldComponentUpdate , render and  componentDidUpdate.
+        Unmounting : signifies the componentWithUnmount Phase.
+     These phase allow precise management of component behavior at different lifecycle points.
+
+
+Q.6 - What is the differnce between props and state in React?
+
+Ans . Props for data transfer : Pass data from parent to child components.
+        Immutable nature : Props should not be altered within child components.
+        State for components-specific data : Used to manage mutable data within a component.
+
+
 
         
