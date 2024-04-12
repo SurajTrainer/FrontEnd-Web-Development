@@ -453,4 +453,58 @@ Ans . Props for data transfer : Pass data from parent to child components.
 
 
 
-        
+Q.7 - How do you optimize perfomance in a React application?
+
+Ans . React perfomance optimization.
+        1. Utilize virtual DOM.
+        2. Apply shouldComponentUpdate to prevent unnecesary render.
+        3. use PureComponent for components.
+        4. Leverage tools like React Profiler to identify bottlenecks.
+
+
+Q.8 - What are higher-order components (HOCs) in React, and why are they useful?
+
+Ans . HOCs (Higher-Order Components ) enhance components by adding props or behavior.
+        Promote code reuse , abstract common functions , and seperate concerns.
+        Improve the modularity and maintainablility of your application.
+
+
+Q.9 - Explain the purpose of keys in React lists ? 
+
+Ans . Enhance efficiency 
+        Guide element identification and tracking for DOM updates.
+
+
+Q.10 - What is the Context API in React , and how does it work? 
+
+Ans . Context API : Passes data through component tree without manual prop passing.
+      Global State : Accessible by any component , reducing prop drilling .
+
+
+Q.11 - How does React router work, and how can you handle routing in a react application?
+
+Ans .  React router is a library for routing in React App.
+        Declarative approach : Maps components to Urls.
+        Enabling navigation and rendering based on the current route.
+
+
+Q.12 - What is Redux , and how does it manages state in React applications?
+
+Ans . Redux is a pridictable state container in React.
+        Central store for state management.
+        Relies on actions and reducers.
+        Ensures a single source of truth for state.
+
+
+Q.13 - What is the purpose of React Hooks, and how do you use them? 
+
+Ans . React Hooks : Functions for connecting with React state and lifecycle in functional components.
+      Build-in-Hooks : Use useState for state management and useEffect for side effects in functional components.
+
+
+Q.14 - Explain the concept of conditional rendering in React?
+
+Ans . Conditional rendering displays components/content based on conditions.
+        If statements, ternary operators, and logical opearators enables this feature.
+        Alter component display dynamically with these tools.
+        Customize user experiences by showing or hiding elements as needed.
