@@ -508,3 +508,35 @@ Ans . Conditional rendering displays components/content based on conditions.
         If statements, ternary operators, and logical opearators enables this feature.
         Alter component display dynamically with these tools.
         Customize user experiences by showing or hiding elements as needed.
+
+
+
+Q.15 - What are controlled and uncontrolled components in React forms?
+
+Ans . Controlled components in React are tied to the component's state for managing form elements like input fields.
+       Uncontrolled components , on the other hand , let form elements maintain their state independently , often using ref.
+     In most situations , its advisable to use controlled components.
+
+
+Q.16 -what are promises in React JS?
+
+Ans . React js uses promises for handling asynchronus opearations.
+        Asynchronus operations are tasks that don't complete instantly.
+        Promises enhance code readebility , maintainability, and error handling.
+        The useState hook in React js can employed alongside promises to manage component state.
+
+
+Q.17 - What is prop in React? What is prop function and prop drilling?
+
+Ans . Prop : 
+        In React , props are read-only properties sent from parent to child component.
+        Props transfer various data-types, such as strings, numbers, objects and array.
+
+      Prop functions : 
+        Prop functions provide control over child component behavior, enabling callbacks, event handlers , and form validation.
+
+      Prop drilling :
+       Prop drilling involves passing data from parents to nested child components , potentially leading to complex and hard to maintain code.
+       To mitigate prop drilling , useContext, component composition , and state management tools like Redux.
+
+       
